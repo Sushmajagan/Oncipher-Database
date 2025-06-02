@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Genes associated in Breast Cancer</title>
+<title>Genes associated in Cervical Cancer</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
@@ -119,17 +119,16 @@ tr:nth-child(odd) {
   <a href="./../factlens_main.html">&laquo; Main</a>
   <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
- 
-    <a href="in_female.html">Females</a>
+       <a href="in_female.html">Females</a>
   </div>
   <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
-
+   
     <a href="m_female.html">Females</a>
   </div>
   <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
-
+ 
     <a href="p_female.html">Females</a>
   </div>
   <a href="diagnosis.html">Diagnosis</a>
@@ -144,14 +143,13 @@ tr:nth-child(odd) {
   <a href="nutri.html">Nutrigenomics</a>
   <a href="gene.html">Genes</a>
   <a href="poly.html">Polymorphisms</a>
-      <a href="path.html">Signalling Pathway</a>
-      </div>
-</div>
+    <a href="path.html">Signalling Pathways</a>
+ </div>
 
 <button id="toggleBtn"> Menu</button>
 
 <div class="header" id="header">
-  <h1>Genes associated in Breast Cancer</h1>
+  <h1>Genes associated in Cervical Cancer</h1>
 </div>
 
 <div class="main-content" id="mainContent">
@@ -160,80 +158,118 @@ tr:nth-child(odd) {
 <table>
 <thead>
   <tr>
-    <th width="80">S.No.	</th>
-    <th width="150">Gene </th>
-    <th width="130">Type</th>
-	<th width="200">Molecular Function</th>
-    <th width="250">Significance / Inference</th>
-    <th width="150">Reference</th>
+    <th width="90">S.No.	</th>
+  
+  <th width="120">Gene	</th>
+   <th width="180">Function</th>
+  <th width="170">Type</th>
+  	<th width="250">Significance</th>
+  	<th width="150">Reference</th>
+ </tr>
+  <tr> <td >1.</td>
+   <td >PIK3CA</td>
+  <td>Encodes PI3K catalytic subunit; regulates PI3K-AKT-mTOR signaling</td>
+    <td>Oncogene</td>
+	<td>Activating mutations (E542K, E545K) drive tumor growth and therapeutic resistance</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8871541/">(1)</a><a href="https://www.nature.com/articles/nature21386">(2)</a></td>
   </tr>
   <tr>
-    <td >1.</td>
-    <td >HER2</td>
-    <td>Oncogene	</td>
-    <td>Transmembrane tyrosine kinase receptor	</td>
-	<td>Driver of HER2+ breast cancer; targeted by therapies like trastuzumab</td>
-<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2721311/">(1)</a></td>
-  </tr>
-  <tr><td >2.</td>
-    <td>BRCA1	</td>
-    <td>Tumor suppressor</td>
-    <td>DNA repair via homologous recombination	</td>
-  <td>Mutations increase hereditary breast cancer risk; linked to genomic instability	</td>
-<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2721311/">(1)<a href="https://www.xiahepublishing.com/1555-3884/GE-2023-00094">(2)</a></td>
- 
-  </tr>
-  <tr><td >3.</td>
-    <td>RAD51		</td>
-    <td>DNA repair gene	</td>
-    <td>Homologous recombination repair	</td>
-	<td>Overexpression in breast cancer correlates with poor prognosis</td>
-<td><a href="https://www.xiahepublishing.com/1555-3884/GE-2023-00094">(2)</a></td>
-  </tr>
-  <tr><td >4.</td>
-    <td>CCNB1</td>
-    <td>Cell cycle regulator	</td>
-    <td>G2/M phase transition (cyclin B1)	</td>
-  <td>Upregulated in tumors; associated with aggressive subtypes and shorter survival	</td>
-<td><a href="https://www.xiahepublishing.com/1555-3884/GE-2023-00094">(2)</a></td>
-   </tr> <tr><td >5.</td>
-    <td>CHEK1	</td>
-    <td>DNA damage checkpoint	</td>
-    <td>Cell cycle arrest in response to DNA damage	</td>
-  <td>High expression linked to chemotherapy resistance and poor outcomes</td>
-<td><a href="https://www.xiahepublishing.com/1555-3884/GE-2023-00094">(2)</a></td>
-   </tr> <tr><td >6.</td>
-    <td>CDK1</td>
-    <td>Cell cycle kinase	</td>
-    <td>Regulation of mitosis and cell division	</td>
-  <td>Overexpression correlates with highest hazard ratio (HR=1.68) for mortality</td>
-<td><a href="https://www.xiahepublishing.com/1555-3884/GE-2023-00094">(2)</a></td>
-   </tr> <tr><td >7.</td>
-    <td>VEGFA</td>
-    <td>Angiogenesis factor	</td>
-    <td>Vascular endothelial growth factor signaling	</td>
-  <td>Promotes tumor angiogenesis and metastasis; potential anti-angiogenic therapy target	</td>
-<td><a href="https://www.xiahepublishing.com/1555-3884/GE-2023-00094">(2)</a></td>
-   </tr> <tr><td >8.</td>
-    <td>XRCC4</td>
-    <td>DNA repair gene		</td>
-    <td>Non-homologous end-joining repair	</td>
-  <td>Elevated expression in tumors; HR=1.25 for mortality</td>
-<td><a href="https://www.xiahepublishing.com/1555-3884/GE-2023-00094">(2)</a></td>
-   </tr> <tr><td >9.</td>
-    <td>TP53</td>
-    <td>Tumor suppressor		</td>
-    <td>Cell cycle control and apoptosis	</td>
-  <td>Mutated in ~30% of breast cancers; drives genomic instability	</td>
-<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2721311/">(1)</a></td>
-   </tr><tr><td >10.</td>
-    <td>PTEN</td>
-    <td>Tumor suppressor		</td>
-    <td>PI3K/AKT/mTOR pathway inhibition	</td>
-  <td>Loss of function linked to therapy resistance and poor prognosis</td>
-<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2721311/">(1)</a></td>
+   <td >2.</td> 
+    <td>TP53	</td>
+    <td>Tumor suppressor regulating cell cycle and apoptosis</td>
+    <td>Tumor Suppressor</td>
+  <td>	Mutations disable apoptosis, promoting genomic instability and progression.	
+</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8871541/">(1)</a></td>
    </tr>
-       </tbody>
+  <tr><td >3.</td> 
+    <td>FAT1	</td>
+    <td>Involved in cell adhesion and planar polarity	</td>
+    <td>Tumor Suppressor		</td>
+	<td>Frequent deletions (36%) linked to loss of growth regulation	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8871541/">(1)</a><a href="https://www.nature.com/articles/nature21386">(2)</a></td>
+  </tr>
+  <tr><td >4.</td>  
+    <td>BRCA1/2			</td>
+    <td> DNA repair via homologous recombination.	 </td>
+    <td>Tumor Suppressor	</td>
+  <td>CNVs impair DNA repair, increasing genomic instability.	
+
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8871541/">(1)</a></td>
+  </tr>
+  <tr><td >5.</td>
+    <td>ERBB3							</td>
+    <td>Member of the EGFR/ERBB signaling pathway	</td>
+    <td>Oncogene	</td>
+	<td>Novel mutations drive proliferation; potential therapeutic target (e.g., HER3 inhibitors).	</td>
+<td><a href="https://www.nature.com/articles/nature21386">(2)</a></td>
+  </tr>
+  <tr> <td >6.</td>
+    <td>CD274 (PD-L1) </td>
+    <td>Immune checkpoint protein inhibiting T-cell activity	</td>
+    <td>Immune Regulator	</td>
+	<td>Amplifications correlate with immune evasion; target for immunotherapy.	</td>
+<td><a href="https://www.nature.com/articles/nature21386">(2)</a></td>
+  </tr>
+  <tr> <td >7.</td>
+    <td>HLA-A/B	 </td>
+    <td>Antigen presentation and immune response modulation.	</td>
+    <td>Tumor Suppressor	</td>
+	<td>Mutations disrupt TGF-β signaling, enabling uncontrolled proliferation</td>
+<td><a href="https://www.nature.com/articles/nature21386">(2)</a></td>
+   </tr>
+   <tr> <td >8.</td>
+    <td>TGFBR2 </td>
+    <td>Antigen presentation and immune response modulation.		</td>
+    <td>Immune Regulator	</td>
+	<td>Germline/somatic mutations alter immune recognition of HPV-infected cells.	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8871541/">(1)</a><a href="https://www.nature.com/articles/nature21386">(2)</a></td>
+   </tr>
+   <tr> <td >9.</td>
+    <td>TTK	 </td>
+    <td>Kinase involved in mitotic checkpoint control.		</td>
+    <td>Oncogene</td>
+	<td>Overexpression linked to poor prognosis and therapeutic resistance.	
+</td>
+<td><a href="https://onlinelibrary.wiley.com/doi/10.1155/2021/8810074">(3)</a></td>
+   </tr>
+   <tr> <td >10.</td>
+    <td>FOXM1 </td>
+    <td>Transcription factor regulating cell cycle progression.	</td>
+    <td>Oncogene</td>
+	<td>Upregulated in tumors; associated with metastasis and recurrence</td>
+<td><a href="https://onlinelibrary.wiley.com/doi/10.1155/2021/8810074">(3)</a></td>
+   </tr>
+   <tr> <td >11.</td>
+    <td>PAX8 </td>
+    <td>Regulates thyroid differentiation and oncogenesis.	</td>
+    <td>Oncogene</td>
+	<td>GWAS-implicated in cervical cancer susceptibility; role in cell proliferation</td>
+<td><a href="https://academic.oup.com/hmg/article/32/12/2103/7078905?login=false">(4)</a></td>
+   </tr>
+   <tr> <td >12.</td>
+    <td>KMT2C/D	 </td>
+    <td>Histone methyltransferases regulating gene expression.	</td>
+    <td>Tumor Suppressor	</td>
+	<td>Mutations disrupt epigenetic regulation, promoting oncogenesis.	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8871541/">(1)</a></td>
+   </tr>
+   <tr> <td >13.</td>
+    <td>FGFR	 </td>
+    <td>Receptor tyrosine kinase involved in growth signaling</td>
+    <td>Oncogene</td>
+	<td>Mutations may confer resistance to radiotherapy</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8871541/">(1)</a></td>
+   </tr>
+   <tr> <td >14.</td>
+    <td>GSDMB </td>
+    <td>Gasdermin family member involved in pyroptosis</td>
+    <td>Immune Regulator	</td>
+	<td>GWAS-linked to cervical cancer risk; potential role in inflammation</td>
+<td><a href="https://academic.oup.com/hmg/article/32/12/2103/7078905?login=false">(4)</a></td>
+   </tr>
+  
+    </tbody>
 </table>
 
 </div>

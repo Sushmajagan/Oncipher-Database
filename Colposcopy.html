@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<a href="index.html" class="previous">&laquo; Previous</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1abc9c;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background:linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: -3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+	
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Colposcopy</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+     <li><a href="diagnosis.html">Initial Screening</a></li>
+      <li class="active"><a href="Colposcopy.html">Colposcopy</a></li>
+	      <li><a href="biopsy.html">Biopsy</a></li>
+	 	  <li><a href="img.html">Imaging Tests</a></li>
+	  
+	  
+    </ul>
+  </nav>
+  
+  <article>
+   <p>Colposcopy is a vital diagnostic procedure used to examine the cervix, vagina, and vulva for signs of abnormal or cancerous cells, particularly following abnormal results from cervical screening tests such as Pap smears or positive HPV tests. This procedure plays a crucial role in the early detection and management of cervical cancer.</p>
+   <img src="col.png" align="right">
+
+<p style ="font-family:arial;">
+
+<b><p>Purpose of Colposcopy</p></b>
+<b><p>Detection of Abnormalities: </p></b>Colposcopy is primarily performed to identify precancerous changes (cervical intraepithelial neoplasia, CIN) and invasive cervical cancer.
+<b><p>Follow-Up: </p></b>It serves as a follow-up to abnormal Pap test results or high-risk HPV findings, allowing healthcare providers to evaluate the cervix more closely.
+<b><p>Procedure Steps</p></b>
+<b><p>Preparation:</p></b>
+Patients are advised to schedule the procedure when they are not menstruating and to avoid vaginal intercourse, douching, or inserting anything into the vagina for 24 hours prior to the exam.
+<b><p>During the Procedure:</p></b>
+The patient lies on an examination table similar to a pelvic exam.
+A speculum is inserted into the vagina to hold it open, allowing access to the cervix.
+A colposcope, which is a lighted magnifying instrument, is positioned outside the vagina to provide a clear view of the cervix without touching it.
+A vinegar-like solution (acetic acid) is applied to the cervix to enhance visibility of abnormal cells.
+<b><p>Biopsy:</p></b>
+If abnormal areas are detected, a biopsy may be performed. This involves taking small tissue samples from the cervix for laboratory analysis.
+There are two main types of biopsies:
+<b><p>Exocervical Biopsy:</p></b> Tissue is taken from the outer part of the cervix.
+<b><p>Endocervical Biopsy:</p></b> Tissue is taken from inside the cervical canal.
+<b><p>Duration:</p></b>
+The entire colposcopy procedure typically lasts about 10 to 20 minutes.
+<a href="https://www.cancer.gov/types/cervical/diagnosis">Source</a>
+
+  </article>
+</section>
+
+</body>
+</html>
+

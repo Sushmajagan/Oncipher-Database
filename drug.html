@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Drugs of Breast Cancer</title>
+<title>Drugs of Cervical Cancer</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
@@ -108,7 +108,7 @@ th, td {
 }
 
 tr:nth-child(odd) {
-   background: linear-gradient(to bottom, #00ff99 0%, #cc66ff 100%);
+  background: linear-gradient(to bottom, #00ff99 0%, #cc66ff 100%);
 }
 </style>
 </head>
@@ -119,7 +119,7 @@ tr:nth-child(odd) {
   <a href="./../factlens_main.html">&laquo; Main</a>
   <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
-
+   
     <a href="in_female.html">Females</a>
   </div>
   <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
@@ -129,7 +129,7 @@ tr:nth-child(odd) {
   </div>
   <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
-  
+   
     <a href="p_female.html">Females</a>
   </div>
   <a href="diagnosis.html">Diagnosis</a>
@@ -140,18 +140,18 @@ tr:nth-child(odd) {
     <a href="pharm.html">Pharmacogenomics</a>
   </div>
   <a href="treatment.html">Treatment</a>
-  <a href="drug.html">Drugs</a>
+  <a href="drug.html">Drugs</a> <a href="vaccine.html">Vaccine</a>
   <a href="nutri.html">Nutrigenomics</a>
   <a href="gene.html">Genes</a>
   <a href="poly.html">Polymorphisms</a>
-     <a href="path.html">Signalling Pathway</a>
+  <a href="path.html">Signalling Pathways</a>
+ 
   </div>
-</div>
 
 <button id="toggleBtn"> Menu</button>
 
 <div class="header" id="header">
-  <h1>Drugs of Breast Cancer</h1>
+  <h1>Drugs of Cervical Cancer</h1>
 </div>
 
 <div class="main-content" id="mainContent">
@@ -160,140 +160,95 @@ tr:nth-child(odd) {
 <table>
 <thead>
   <tr>
-  <th width="70">Drug Name	</th>
-    <th width="160">Type</th>
-    <th width="180">Dosage</th>
-    <th width="170">Mechanism of Action</th>
-	<th width="170">Indication</th>
-	<th width="150">Common side effects</th>
-	<th width="170">Alternatives and Allergy Consideration Drug</th>
-	<th width="270">Dosage</th>
+  <th width="40">Drug Name	</th>
+    <th width="40">Type</th>
+    <th width="80">Dosage</th>
+    <th width="50">Mechanism of Action</th>
+	<th width="70">Indication</th>
+	<th width="30">Common side effects</th>
+	<th width="40">Alternatives and Allergy Consideration Drug</th>
+	<th width="200">Dosage</th>
 	
     
 	
   </tr>
-  <tr><td>Anastrozole	</td>
-    <td>Aromatase inhibitor (AI)		</td>
-    <td>1 mg orally once daily	</td>
-    <td>Selective, competitive inhibition of aromatase enzyme, reducing estrogen synthesis	</td>
-	<td>Hormone receptor-positive (HR+) breast cancer	</td>
-  <td>Hot flashes, joint pain, bone density loss, cardiovascular risks	</td>
-  <td>Letrozole, Exemestane</td>
-  <td>2.5 mg orally once daily. Caution in ischemic heart disease; monitor bone mineral density	<a href="https://go.drugbank.com/drugs/DB01217">(1)</a></td>
+  <tr><td>Cisplatin	</td>
+    <td>Platinum chemotherapy		</td>
+    <td>40 mg/m² weekly (chemoradiation)	</td>
+    <td>DNA cross-linking		</td>
+	<td>Locally advanced disease		</td>
+  <td>Nephrotoxicity, ototoxicity	</td>
+  <td>Carboplatin<br><br><br>Oxaliplatin</td>
+  <td> AUC 2-5 every 3 weeks<br><br><br>130 mg/m² every 21 days<a href="https://www.cancertherapyadvisor.com/ddi/cervical-cancer-pharmacologic-treatment/">(1)<a href="https://www.sgo.org/news/drugshortages2/">(2)</a></td>
 
   </tr>
   <tr>
-    <td>Tamoxifen</td>
-    <td>Selective estrogen receptor modulator (SERM)	</td>
-    <td>20 mg orally once or twice daily		</td>
-    <td>Blocks estrogen receptors on breast cancer cells, inhibiting estrogen-driven tumor growth</td>
-  <td>HR+ breast cancer, pre- and postmenopausal women		</td>
-<td>Hot flashes, risk of blood clots, endometrial cancer	</td>
-<td>Raloxifene </td>
-<td> 60 mg orally once daily (risk reduction) or Toremifene 60 mg orally once daily<a href="https://www.cancer.org/cancer/types/breast-cancer/treatment/targeted-therapy-for-breast-cancer.html">(1)</a></td>
+    <td>Carboplatin</td>
+    <td>Platinum chemotherapy	</td>
+    <td>AUC 2-5 every 3 weeks</td>
+    <td>Platinum-DNA adduct formation	</td>
+  <td>Recurrent/metastatic disease		</td>
+<td>Myelosuppression, hypersensitivity		</td>
+<td>Cisplatin<br><br><br>Oxaliplatin </td>
+<td> 50 mg/m² every 3 weeks<br><br><br> 130 mg/m² every 21 days (if both platin allergy)<a href="https://www.cancertherapyadvisor.com/ddi/cervical-cancer-pharmacologic-treatment/">(1)<a href="https://www.sgo.org/news/drugshortages2/">(2)</a></td>
  </tr>
   <tr>
     
-    <td>Letrozole</td>
-    <td>Aromatase inhibitor	</td>
-	<td>2.5 mg orally once daily		</td>
-    <td>Inhibits aromatase enzyme, lowering estrogen levels		</td>
-	<td>HR+ breast cancer, postmenopausal women	</td>
-	<td>Hot flashes, joint pain, osteoporosis		</td>
-<td>Anastrozole <br> Exemestane 	</td>
-<td>1 mg orally once daily<br>25 mg orally once daily<a href="https://www.cancer.org/cancer/types/breast-cancer/treatment/targeted-therapy-for-breast-cancer.html">(1)</a></td></tr>
+    <td>Paclitaxel</td>
+    <td>Taxane chemotherapy		</td>
+	<td>135-175 mg/m² every 3 weeks	</td>
+    <td>Microtubule stabilization	</td>
+	<td>Recurrent/metastatic combinations		</td>
+	<td>Neuropathy, alopecia			</td>
+<td>Docetaxel</td>
+<td>75 mg/m² every 3 weeks (limited evidence)<a href="https://www.cancertherapyadvisor.com/ddi/cervical-cancer-pharmacologic-treatment/">(1)<a href="https://www.sgo.org/news/drugshortages2/">(2)</a></td></tr>
   <tr>
-    <td>Abemaciclib (Verzenio)	</td>
-    <td>CDK4/6 inhibitor	</td>
-    <td>150-200 mg orally twice daily		</td>
-  <td>Inhibits cyclin-dependent kinases 4 and 6, blocking cell cycle progression		</td>
-  <td>HR+, HER2- advanced or early breast cancer	</td>
-<td>Diarrhea, neutropenia, fatigue, nausea	</td> 
-<td>Palbociclib <br>Ribociclib  </td> 
-<td> 125 mg orally once daily for 21 days, then 7 days off<br>600 mg orally once daily for 21 days, then 7 days off; monitor blood counts and ECG<a href="https://www.drugs.com/dosage/palbociclib.html">(2)<a href="https://www.drugs.com/dosage/ribociclib.html">(3)</a></td>
+    <td>Bevacizumab</td>
+    <td>Anti-VEGF antibody	</td>
+    <td>15 mg/kg every 3 weeks	</td>
+  <td>VEGF-A blockade	</td>
+  <td>Persistent metastatic disease		</td>
+<td>Hypertension, thromboembolism		</td> 
+<td>None established </td> 
+<td> <a href="https://www.cancertherapyadvisor.com/ddi/cervical-cancer-pharmacologic-treatment/">(1)<a href="https://www.sgo.org/news/drugshortages2/">(2)</a></td>
  </tr> <tr>
-    <td>Palbociclib (Ibrance)	</td>
-    <td>CDK4/6 inhibitor	</td>
-    <td>125 mg orally once daily for 21 days, then 7 days off	</td>
-  <td>Blocks CDK4/6 to prevent cancer cell division	</td>
-  <td>HR+, HER2- advanced breast cancer		</td>
-<td>Neutropenia, infections, fatigue		</td> 
-<td>Ribociclib <br> Abemaciclib </td> 
-<td>600 mg orally once daily for 21 days, then 7 days off <br>150-200 mg orally twice daily<a href="https://www.drugs.com/dosage/ribociclib.html">(4)</a>	</td> 
+    <td>Pembrolizumab		</td>
+    <td>PD-1 inhibitor	</td>
+    <td>200 mg every 3 weeks or 400 mg every 6 weeks		</td>
+  <td>Immune checkpoint blockade	</td>
+  <td>PD-L1+ recurrent/metastatic		</td>
+<td>Immune-related adverse events			</td> 
+<td>Cemiplimab </td> 
+<td>350 mg every 3 weeks (alternative PD-1 inhibitor, limited cervical cancer data)<a href="https://www.cancertherapyadvisor.com/ddi/cervical-cancer-pharmacologic-treatment/">(1)<a href="https://www.sgo.org/news/drugshortages2/">(2)</a></td>
  </tr> <tr>
-    <td>Ribociclib (Kisqali)	</td>
-    <td>CDK4/6 inhibitor	</td>
-    <td>600 mg orally once daily for 21 days, then 7 days off	</td>
-  <td>Inhibits CDK4/6, halting cancer cell proliferation	</td>
-  <td>HR+, HER2- advanced or high-risk early breast cancer		</td>
-<td>Neutropenia, QT prolongation, liver enzyme elevation	</td> 
-<td>Palbociclib <br> Abemaciclib </td> 
-<td>125 mg orally once daily for 21 days, then 7 days off<br>150-200 mg orally twice daily; monitor ECG and liver function<a href="https://www.drugs.com/condition/breast-cancer.html">(5)</a></td>
+    <td>Tisotumab vedotin	</td>
+    <td>ADC</td>
+    <td>2 mg/kg (≤100 kg) or 200 mg fixed dose (>100 kg)		</td>
+  <td>TF-targeted microtubule disruption		</td>
+  <td>Post-chemotherapy recurrence		</td>
+<td>Ocular toxicity, neuropathy		</td> 
+<td>None established </td> 
+<td><a href="https://www.cancertherapyadvisor.com/ddi/cervical-cancer-pharmacologic-treatment/">(1)<a href="https://www.sgo.org/news/drugshortages2/">(2)</a></td>
  </tr> <tr>
-    <td>Capecitabine (Xeloda)	</td>
-    <td>Chemotherapy (antimetabolite)	</td>
-    <td>1250 mg/m² orally twice daily for 14 days, then 7 days off		</td>
-  <td>Converted to 5-FU in tumor cells, inhibits DNA synthesis	</td>
-  <td>Advanced or metastatic breast cancer		</td>
-<td>Diarrhea, hand-foot syndrome, nausea	</td> 
-<td>5-Fluorouraci</td> 
-<td>250 mg/m²/day continuous IV infusion for 21 days, then 7 days off; monitor for allergic skin reactions<a href="https://www.cancer.gov/about-cancer/treatment/drugs/breast">(6)</a></td>
+    <td>Ifosfamide</td>
+    <td>Alkylating agent	</td>
+    <td>1.5-2 g/m² days 1-3 (with mesna)		</td>
+  <td>DNA alkylation	</td>
+  <td>Second-line recurrent		</td>
+<td>Hemorrhagic cystitis		</td> 
+<td>Cyclophosphamide</td> 
+<td>600-1000 mg/m² (limited use in cervical cancer)<a href="https://www.cancertherapyadvisor.com/ddi/cervical-cancer-pharmacologic-treatment/">(1)<a href="https://www.sgo.org/news/drugshortages2/">(2)</a></td>
  </tr>  <tr>
-    <td>Doxorubicin (Adriamycin)	</td>
-    <td>Chemotherapy (anthracycline)		</td>
-    <td>60-75 mg/m² IV every 21 days		</td>
-  <td>Intercalates DNA, inhibits topoisomerase II, causing DNA damage	</td>
-  <td>Breast cancer, often in combination regimens		</td>
-<td>Cardiotoxicity, nausea, hair loss, myelosuppression		</td> 
-<td>Epirubicin</td> 
-<td>100-120 mg/m² IV every 3-4 weeks; allergy rare but possible<a href="https://www.cancer.org/cancer/types/breast-cancer/treatment/chemotherapy-for-breast-cancer.html">(7)</a></td>
- </tr>  <tr>
-    <td>Cyclophosphamide (Cytoxan)	</td>
-    <td>Chemotherapy (alkylating agent)	</td>
-    <td>600 mg/m² IV every 21 days or oral dosing varies	</td>
-  <td>Alkylates DNA, leading to cross-linking and apoptosis		</td>
-  <td>Breast cancer, in combination chemotherapy regimens	</td>
-<td>Nausea, immunosuppression, hemorrhagic cystitis	</td> 
-<td>Allergy possible; hydration and mesna used to prevent cystitis </td> 
-<td><a href="https://www.cancer.org/cancer/types/breast-cancer/treatment/chemotherapy-for-breast-cancer.html">(7)</a></td>
- </tr>  <tr>
-    <td>Fulvestrant (Faslodex)	</td>
-    <td>Selective estrogen receptor degrader (SERD)		</td>
-    <td>500 mg IM on days 0, 14, 28, then monthly	</td>
-  <td>Binds and degrades estrogen receptors, blocking estrogen signaling		</td>
-  <td>HR+ advanced breast cancer		</td>
-<td>Injection site pain, nausea, hot flashes	</td> 
-<td>Aromatase <br>Letrozole </td> 
-<td>Aromatase inhibitors (Anastrozole 1 mg daily<br>2.5 mg daily); monitor for hypersensitivity<a href="https://www.drugs.com/condition/breast-cancer.html">(5)</a></td>
- </tr>  <tr>
-    <td>Trastuzumab (Herceptin)	</td>
-    <td>HER2-targeted monoclonal antibody	</td>
-    <td>4 mg/kg IV loading dose, then 2 mg/kg weekly or 6 mg/kg every 3 weeks	</td>
-  <td>Binds HER2 receptor, inhibiting proliferation of HER2+ cancer cells		</td>
-  <td>HER2+ breast cancer	</td>
-<td>Cardiotoxicity, infusion reactions	</td> 
-<td>Ado-trastuzumab emtansine (T-DM1) </td> 
-<td>3.6 mg/kg IV every 3 weeks<a href="https://www.cancerresearchuk.org/about-cancer/breast-cancer/treatment/targeted-immunotherapy-drugs">(8)</a></td>
- </tr>  <tr>
-    <td>Sacituzumab govitecan (Trodelvy)	</td>
-    <td>Antibody-drug conjugate (ADC)	</td>
-    <td>10 mg/kg IV on days 1 and 8 of 21-day cycle	</td>
-  <td>Targets Trop-2 protein, delivers chemotherapy directly to cancer cells	</td>
-  <td>Advanced HR+ or triple-negative breast cancer	</td>
-<td>Neutropenia, diarrhea, nausea, infusion reactions	</td> 
-<td>Monitor for severe diarrhea and infections; premedication to reduce infusion reactions</td> 
-<td><a href="https://www.drugs.com/condition/breast-cancer.html">(5)</a></td>
- </tr>  <tr>
-    <td>Exemestane (Aromasin)	</td>
-    <td>Aromatase inhibitor	</td>
-    <td>25 mg orally once daily		</td>
-  <td>Irreversibly inhibits aromatase enzyme, lowering estrogen levels		</td>
-  <td>HR+ breast cancer, postmenopausal women	</td>
-<td>Hot flashes, joint pain, osteoporosis	</td> 
-<td>Anastrozole <br> Letrozole </td> 
-<td>1 mg orally once daily<br>2.5 mg orally once daily<a href="https://www.drugs.com/condition/breast-cancer.html">(5)</a></td>
- </tr> 
-   </tbody>
+    <td>Topotecan	</td>
+    <td>Topoisomerase inhibitor	</td>
+    <td>0.75 mg/m² days 1-3 (with cisplatin)		</td>
+  <td>Topoisomerase I inhibition	</td>
+  <td>Second-line recurrent	</td>
+<td>Myelosuppression	</td> 
+<td>Irinotecan</td> 
+<td>125 mg/m² weekly (limited evidence)<a href="https://www.cancertherapyadvisor.com/ddi/cervical-cancer-pharmacologic-treatment/">(1)<a href="https://www.sgo.org/news/drugshortages2/">(2)</a></td>
+ </tr>  
+    </tbody>
 </table>
 
 </div>
