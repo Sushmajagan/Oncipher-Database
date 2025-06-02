@@ -19,14 +19,7 @@ a:hover {
   color: black;
 }
 
-.next {
-  background-color: #04AA6D;
-  color: white;
-}
 
-.round {
-  border-radius: 50%;
-}
 </style>
 </head>
 <body>
@@ -39,6 +32,7 @@ a:hover {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 * {
   box-sizing: border-box;
 }
@@ -67,7 +61,7 @@ nav {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);;
   padding: 20px;
 }
 
@@ -81,79 +75,98 @@ nav ul {
 article {
   -webkit-flex: 3;
   -ms-flex: 3;
-  flex: 3;
+  flex: -3;
   background-color: #f1f1f1;
   padding: 10px;
 }
-
-
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
   section {
     -webkit-flex-direction: column;
     flex-direction: column;
+	
   }
 }
 </style>
 </head>
 <body>
 <header>
-  <h2>Diagnosis</h2>
+  <h2>Biopsy</h2>
 </header>
 
 <section>
   <nav>
     <ul>
-     <li><a href="mammogram.html">Mammography</a></li>
-      <li><a href="ultrasound.html">Ultrasound</a></li>
-      <li><a href="mri.html">Magnetic Resonance Imaging (MRI)</a></li>
-	  <li><a href="biopsy.html">Biopsy</a></li>
+     <li><a href="diagnosis.html">Initial Screening</a></li>
+      <li><a href="Colposcopy.html">Colposcopy</a></li>
+	      <li class="active"><a href="biopsy.html">Biopsy</a></li>
+	 	  <li><a href="img.html">Imaging Tests</a></li>
+	  
 	  
     </ul>
   </nav>
   
   <article>
-    <h1>Biopsy</h1>
-    <p>A biopsy is the definitive method for diagnosing breast cancer. It involves removing tissue or fluid from the breast to be examined under a microscope. There are several types of biopsies:
-<ul><li><b>Fine-Needle Aspiration:</b> A thin needle is used to extract cells.</li>
-<li><b>Core Biopsy: </b>A larger needle removes a core sample of tissue.</li>
-<li><b>Open Biopsy:</b> A surgical procedure to remove a larger area of tissue</li></p>	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a>
+   <p>A cervical biopsy is a crucial diagnostic procedure used to obtain tissue samples from the cervix for examination under a microscope. It is primarily performed when cervical screening tests, such as Pap smears or HPV tests, yield abnormal results. The biopsy helps determine the presence of precancerous changes or cervical cancer.</p>
+  
+
+<p style ="font-family:arial;">
+<b><p>Types of Cervical Biopsies</p></b>
+<b><p>1.Colposcopy-Guided Biopsy:</p></b>
+<b><p>Procedure:</p></b> After a colposcopic examination, where a colposcope provides a magnified view of the cervix, the physician identifies abnormal areas. A small tissue sample is then taken using biopsy forceps.
+<b><p>Advantages:</p></b> This method allows for targeted sampling of suspicious lesions.
+<center><h4>Colposcopy</h4>
+<img src="col.png"></center>
+
+<b><p>2.Punch Biopsy:</p></b>
+<b><p>Procedure: </p></b>A specialized instrument called punch biopsy forceps is used to remove small samples of cervical tissue from the surface of the cervix.
+<b><p>Indications:</p></b> Typically performed during a colposcopy when abnormalities are detected.
+<center><h4>Punch Biopsy</h4>
+<img src="punch.png"></center>
+<b><p>3.Loop Electrosurgical Excision Procedure (LEEP):</p></b>
+<b><p>Procedure:</p></b> A thin wire loop heated by an electrical current is used to excise abnormal cervical tissue along with a margin of healthy tissue. This method also cauterizes blood vessels to minimize bleeding.
+<b><p>Indications:</p></b> Used for both diagnosis and treatment of precancerous lesions.
+<center><h4>Loop Electrosurgical Excision Procedure</h4>
+<img src="elec.png"></center>
+<b><p>4.Cone Biopsy (Conization):</p></b>
+<b><p>Procedure:</p></b> A cone-shaped section of cervical tissue is surgically removed, which may include both the endocervical and exocervical tissues. This can be done using a scalpel, laser, or LEEP technique.
+<b><p>Indications: </p></b>Often utilized when there is a need for deeper tissue sampling to assess invasive cancer.
+<center>
+<img src="cone.png"></center>
+<b><p>5.Endocervical Curettage (ECC):</p></b>
+<b><p>Procedure:</p></b> A curette (a small, spoon-shaped instrument) is used to scrape cells from the endocervical canal.
+<b><p>Indications: </p></b>Performed when there is suspicion of abnormalities in the canal that may not be visible during colposcopy.
+<center>
+<img src="en.png"></center>
+<b><p>Procedure Steps</p></b>
+<b><p>Preparation:</p></b>
+<p>1.Patients are advised to avoid vaginal intercourse, douching, and using tampons for 24 hours before the procedure.</p>
+<p>2.The procedure is usually scheduled when the patient is not menstruating.</p>
+<b><p>During the Procedure:</p></b>
+<p>1.The patient lies on an examination table in a lithotomy position.</p>
+<p>2.A speculum is inserted into the vagina to hold it open.</p>
+<p>3.The cervix may be washed with a vinegar solution to enhance visibility of abnormal cells.</p>
+<p>4.Depending on the type of biopsy, either forceps or a heated wire loop is used to collect tissue samples.</p>
+<b><p>Post-Procedure Care:</p></b>
+<p>1.Patients may experience light bleeding or discharge following the biopsy.</p>
+<p>2.Instructions typically include avoiding tampons and sexual intercourse for a specified period to allow healing.</p>
+<b><p>Risks and Complications</p></b>
+While cervical biopsies are generally safe, potential risks include:
+<ul><li>Mild cramping or discomfort during and after the procedure.</li>
+<li>Light bleeding or spotting post-biopsy.</li>
+<li>Rarely, infection or excessive bleeding may occur.</li>
+<b><p>Results Interpretation</p></b>
+Tissue samples obtained from biopsies are sent to a pathology laboratory for microscopic examination.
+<b><p>Results can indicate:</p></b>
+<ul><li>Normal cervical tissue.</li>
+<li>Precancerous changes (CIN).</li>
+<li>Invasive cervical cancer.</li>
+<a href="https://www.cancer.gov/types/cervical/diagnosis">Source</a>
+
   </article>
 </section>
-<body>
-<style>
-* {
-  box-sizing: border-box;
-}
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-</head>
-<body>
-<div class="row">
-  <div class="column"><center><h3>Fine-Needle Aspiration</h3></center>
-    <img src="fine.png" alt="Fine-Needle Aspiration" style="width:100%">
-  </div>
-  <div class="column"><center><h3> Core Biopsy</h3></center>
-    <img src="core.png" alt="core" style="width:100%">
-  </div>
-  <div class="column"><center><h3>Biopsy</h3></center>
-    <img src="incisional.png" alt="incisional" style="width:110%">
-  </div>
-</div>
-</style>
 </body>
 </html>
 

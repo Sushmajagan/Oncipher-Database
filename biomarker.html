@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biomarker of Breast Cancer</title>
+<title>Biomarker of Cervical Cancer</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
@@ -119,14 +119,17 @@ tr:nth-child(odd) {
   <a href="./../factlens_main.html">&laquo; Main</a>
   <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
-      <a href="in_female.html">Females</a>
+
+    <a href="in_female.html">Females</a>
   </div>
   <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
-      <a href="m_female.html">Females</a>
+ 
+    <a href="m_female.html">Females</a>
   </div>
   <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
+
     <a href="p_female.html">Females</a>
   </div>
   <a href="diagnosis.html">Diagnosis</a>
@@ -137,87 +140,82 @@ tr:nth-child(odd) {
     <a href="pharm.html">Pharmacogenomics</a>
   </div>
   <a href="treatment.html">Treatment</a>
-  <a href="drug.html">Drugs</a>
+  <a href="drug.html">Drugs</a> <a href="vaccine.html">Vaccine</a>
   <a href="nutri.html">Nutrigenomics</a>
   <a href="gene.html">Genes</a>
   <a href="poly.html">Polymorphisms</a>
-    <a href="path.html">Signalling Pathway</a>
-  </div>
+  <a href="path.html">Signalling Pathways</a>
 </div>
 
 <button id="toggleBtn"> Menu</button>
 
 <div class="header" id="header">
-  <h1>Biomarker of Breast Cancer</h1>
+  <h1>Biomarker of Cervical Cancer</h1>
 </div>
 
 <div class="main-content" id="mainContent">
 
-<!-- biomarker Table -->
+<!-- Biomarker Table -->
 <table>
 <thead>
   <tr>
-    <th width="160">Biomarker	</th>
-    <th width="180">Normal Measure	</th>
-    <th width="180">Abnormal Measure	</th>
-	<th width="320">Clinical Significance</th>
-	<th width="200">Reference</th>
+    <th width="200">Biomarker	</th>
+    <th width="150">Normal Range/Expression</th>
+	 <th width="220">Abnormal Measures</th>
+     <th width="320">Significance</th>     <th width="190">Reference</th>
+  </tr>
+    
 	
+ <tr>
+    <td>SCC Antigen (SCC Ag)	</td>
+    <td>lesser 37 U/mL		</td>
+    <td>Elevated in 24-90% of cervical cancer patients, depending on stage	</td>
+	<td>Indicates presence of squamous cell carcinoma; higher levels correlate with advanced disease stages.
+</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5956116/">(1)<a href="https://journals.lww.com/cancerjournal/fulltext/2023/19050/role_of_squamous_cell_carcinoma_antigen_in.24.aspx">(2)<a href="https://pubmed.ncbi.nlm.nih.gov/7964945/">(3)</td>
   </tr>
   <tr>
-    <td >Estrogen Receptor (ER)	</td>
-    <td><1% tumor cells positive by IHC	</td>
-    <td>≥1% tumor cells positive by IHC	</td>
-	<td>Positive ER indicates hormone receptor–positive breast cancer; predicts response to endocrine therapy (e.g., tamoxifen, aromatase inhibitors) and better prognosis	</td>
-<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10819101/">(1)</a><a href="https://www.nature.com/articles/s43856-021-00013-3">(2)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)</a> </tr>
-  <tr>
-    <td>Progesterone Receptor (PR)	</td>
-     <td><1% tumor cells positive by IHC	</td>
-    <td>>≥1% tumor cells positive by IHC	</td>
- <td>PR positivity often accompanies ER positivity; indicates hormone responsiveness and better prognosis	</td>
-<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10819101/">(1)<a href="https://www.nature.com/articles/s43856-021-00013-3">(2)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)</a> </tr>
+    <td>CA19-9		</td>
+    <td>lesser than 37 U/mL</td>
+    <td>Elevated levels may indicate malignancy, including cervical cancer	</td>
+	<td>Associated with tumor burden; not specific but can aid in monitoring treatment response.
+</td><td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5956116/">(1)<a href="https://journals.lww.com/cancerjournal/fulltext/2023/19050/role_of_squamous_cell_carcinoma_antigen_in.24.aspx">(2)</td>
 
   </tr>
   <tr>
-    <td>Ki-67 (Proliferation Index)	</td>
-   <td>	Low level, typically <14% positive cells	</td>
-    <td>High level, typically ≥14% positive cells		</td>
-	<td>High Ki-67 indicates high tumor proliferation, worse prognosis, and may guide chemotherapy decisions, especially in Luminal B subtype</td>
-<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10819101/">(1)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://jpionline.org/article/32383/">(4)</a> </tr>
+    <td>CYFRA 21-1	</td>
+    <td>lesser than 3.3 ng/mL	</td>
+    <td>Elevated levels correlate with disease presence and progression	</td>
+	<td>More frequently positive in squamous cell carcinoma; decline during treatment indicates response.
+</td>
+<td><a href="https://pubmed.ncbi.nlm.nih.gov/10870643/">(4)<a href="https://pubmed.ncbi.nlm.nih.gov/7505543/">(5)<a href="https://pubmed.ncbi.nlm.nih.gov/11240675/">(6)</td>
   </tr>
   <tr>
-    <td>CA 15-3 (Cancer Antigen 15-3)	</td>
-    <td><30 U/mL (varies by assay)	</td>
-    <td>Elevated (>30 U/mL)	</td>
-  <td>Used for monitoring treatment response and disease progression in advanced breast cancer; not diagnostic alone</td>
-	<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7881406/">(1)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://www.ncbi.nlm.nih.gov/books/NBK597378/table/article-145903.table1/?report=objectonly">(5)</a>
+    <td>miRNA-29a		</td>
+    <td> Variable (baseline not well-defined)	 </td>
+    <td>Elevated in early-stage cervical cancer	</td>
+	<td>Part of a multi-biomarker panel for non-invasive detection; high sensitivity and specificity.
+</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5956116/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/7964945/">(3)</td>
   </tr>
   <tr>
-    <td>CA 27.29	</td>
-    <td><38 U/mL (varies by assay)	 </td>
-    <td>Elevated (>38 U/mL)		</td>
-	<td>Similar to CA 15-3, used for monitoring metastatic breast cancer and treatment response</td>
-<td><a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://www.ncbi.nlm.nih.gov/books/NBK597378/table/article-145903.table1/?report=objectonly">(5)</a></td>  </tr>
-  <tr>
-    <td>Carcinoembryonic Antigen (CEA)	</td>
-    <td><5 ng/mL (varies)	</td>
-    <td>Elevated (>5 ng/mL)	</td>
-	<td>May indicate tumor activity or metastasis; less specific, can be elevated in benign conditions</td>
-	<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7881406/">(1)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://www.ncbi.nlm.nih.gov/books/NBK597378/table/article-145903.table1/?report=objectonly">(5)</a>
-  </tr><tr>
-    <td>Bcl-2</td>
-    <td>Normal expression in cells	</td>
-    <td>Overexpression or underexpression	</td>
-	<td>Anti-apoptotic protein; expression patterns correlate with tumor subtype and prognosis</td>
-   	<td><a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)</a></td>
-  </tr><tr>
-    <td>p53</td>
-    <td>Wild-type expression	</td>
-    <td>Mutations or overexpression	</td>
-	<td>Tumor suppressor gene; mutations associated with aggressive tumors and poor prognosis</td>
-   	<td><a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://www.nature.com/articles/s41392-024-01823-2">(6)</a></td>
+    <td>miRNA-25				</td>
+    <td> Variable (baseline not well-defined)	 </td>
+    <td>Elevated in early-stage cervical cancer	</td>
+	<td>Contributes to the accuracy of multi-biomarker panels for early detection.</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5956116/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/7964945/">(3)</td>
   </tr>
-        </tbody>
+  <tr>
+    <td>miRNA-486-5p				</td>
+    <td> Variable (baseline not well-defined)	 </td>
+    <td>Elevated in early-stage cervical cancer	</td>
+	<td>Enhances the sensitivity and specificity of biomarker panels for cervical cancer detection.
+</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5956116/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/7964945/">(3)</t
+</tr>
+  
+    </table>
+</tbody>
 </table>
 
 </div>
@@ -267,4 +265,16 @@ toggleBtn.onclick = toggleSidebar;
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
