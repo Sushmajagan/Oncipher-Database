@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 193px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: Black;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 80px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:l;
+  color: grey;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cervical Cancer</h1>
+ 
+</div>
+</body>
+</html>
+<div class="sidenav">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: white;
+  color: white;
+}
+}
+</style>
+</head>
+<body>
+<a href="./../factlens_main.html" class="previous">&laquo; Main</a></center>
+</body>
+</html> 
+   <button class="dropdown-btn">Incidence 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+  <a href="in_both.html">Both Sexes</a>
+    <a href="in_male.html">Males</a>
+    <a href="in_female.html">Females</a>
+  </div>
+  <a href="#services"></a>
+   <button class="dropdown-btn">Mortality 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+   <a href="m_both.html">Both Sexes</a>
+    <a href="m_male.html">Males</a>
+    <a href="m_female.html">Females</a>
+  </div>
+  
+   <button class="dropdown-btn">Prevalence 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="p_both.html">Both Sexes</a>
+    <a href="p_male.html">Males</a>
+    <a href="p_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+   <a href="drug.html">Drugs</a>
+    <a href="nutri.html">Nutrigenomics</a>
+     <a href="gene.html">Genes</a>
+     <a href="poly.html">Polymorphisms</a>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+<div class="content">
+    
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 70px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 9px;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+</head>
+<body>
+
+<table align="right">
+  <tr>
+    <th width="100">S.No.	</th>
+    <th width="100">Polymorphism	</th>
+    <th width="100">Gene</th>
+    <th width="150">Type	</th>
+	<th width="150">Function</th>
+	<th width="200">Significance</th>
+	<th width="100">Reference</th>
+  </tr>
+  <tr>
+    <td >1.</td>
+    <td>-819C>T	</td>
+    <td>IL10			</td>
+	<td>Single Nucleotide Polymorphism (SNP)	
+</td>
+<td>Cytokine production	</td>
+<td>Associated with decreased risk of diffuse large B-cell lymphoma (DLBCL) 	</td>
+<td><a href="https://www.jcancer.org/v06p0709.htm">(1)</a></td>
+  </tr>
+  <tr> <td >2.</td>
+    <td>-592C>A	</td>
+    <td>IL10			</td>
+    <td>Single Nucleotide Polymorphism (SNP)	</td>
+  <td>Cytokine production	
+</td>
+<td>Associated with decreased risk of DLBCL</td>
+<td><a href="https://www.jcancer.org/v06p0709.htm">(1)</a></td>
+  </tr>
+  <tr> <td >3.</td>
+    <td>Arg194Trp	</td>
+    <td>XRCC1</td>
+    <td>Amino Acid Change	</td>
+	<td>DNA repair	
+</td>
+<td>Associated with decreased NHL risk </td>
+<td><a href="https://haematologica.org/article/view/4557">(2)</a></td>
+
+  </tr>
+  <tr> <td >4.</td>
+    <td>2R/3R	</td>
+    <td> MTHFR	 </td>
+    <td>Repeat Polymorphism	</td>
+  <td>Folate metabolism	
+</td>
+<td>Associated with increased risk of NHL 	</td>
+ <td><a href="https://aacrjournals.org/cebp/article/14/12/2999/257340/Risk-of-Non-Hodgkin-Lymphoma-Associated-with">(3)</a></td>
+
+ 
+ </tr>
+  <tr> <td >5.</td>
+    <td>115 CT	</td>
+    <td>MGMT</td>
+    <td>Single Nucleotide	</td>
+	<td>DNA repair	
+</td>
+<td>Associated with increased NHL risk 	</td>
+ <td><a href="https://www.mdpi.com/1422-0067/15/4/6703">(4)</a></td>
+ </tr>
+  <tr> <td >6.</td>
+    <td>rs441399</td>
+    <td>BLM	</td>
+    <td>Single Nucleotide Polymorphism (SNP)	</td>
+	<td>DNA repair	
+</td>
+<td>Associated with follicular lymphoma 	</td>
+ <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2967772/">(5)</a></td>
+
+  </tr>
+    <tr> <td >7.</td>
+    <td>rs2304583</td>
+    <td>FAM82C		</td>
+    <td>Single Nucleotide Polymorphism (SNP)	</td>
+	<td>DNA repair 
+</td>
+<td>Associated with follicular lymphoma </td>
+ <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2967772/">(5)</a></td>
+  </tr>
+    <tr> <td >8.</td>
+    <td>rs4150506</td>
+    <td>ERCC3	</td>
+    <td>Single Nucleotide Polymorphism (SNP)	</td>
+	<td>DNA repair
+</td>
+<td>Associated with reduced risk for marginal zone lymphoma</td>
+ <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2967772/">(5)</a></td>
+  </tr>
+  </tr>
+    <tr> <td >9.</td>
+    <td>rs13178127 </td>
+    <td>XRCC4	</td>
+    <td>Single Nucleotide		</td>
+	<td>DNA repair	
+</td>
+<td>Significantly associated with overall NHL risk</td>
+ <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2967772/">(5)</a></td>
+  </tr>   
+  <tr> <td >10.</td>
+    <td>Ile143Val</td>
+    <td>MGMT		</td>
+    <td>Amino Acid Change		</td>
+	<td>DNA repair
+</td>
+<td>Positive association with follicular lymphoma</td>
+<td><a href="https://haematologica.org/article/view/4557">(2)</a></td>
+    </table>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
+

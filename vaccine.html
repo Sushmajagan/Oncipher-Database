@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genes associated in Stomach Cancer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+/* Sidebar */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+.active {
+  color: grey;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Toggle Button */
+#toggleBtn {
+  position: fixed;
+  top: 3px;
+  left: 210px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 3;
+  transition: left 0.5s;
+}
+
+/* Header */
+.header {
+  padding: 23px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  margin-left: 200px;
+  transition: margin-left 0.5s;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+  transition: margin-left 0.5s;
+}
+
+/* Table Styling */
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid #cce5ff;
+  text-align: left;
+  padding: 9px;
+}
+
+tr:nth-child(odd) {
+  background: linear-gradient(to bottom, #ff9966 0%, #ff99cc 100%);
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidenav" id="mySidenav">
+  <a href="./../factlens_main.html">&laquo; Main</a>
+  <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="m_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="p_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+  <a href="drug.html">Drugs</a>
+  <a href="vaccine.html">Vaccine</a>
+  <a href="nutri.html">Nutrigenomics</a>
+  <a href="gene.html">Genes</a>
+  <a href="poly.html">Polymorphisms</a>
+  <a href="path.html">Signalling Pathways </a>
+  
+</div>
+
+<button id="toggleBtn"> Menu</button>
+
+<div class="header" id="header">
+  <h1>Vaccine for Cervical Cancer</h1>
+</div>
+
+<div class="main-content" id="mainContent">
+
+<!-- vaccine Table -->
+<table>
+<thead>
+  <tr>
+     <th width="80">S.No.	</th>
+    <th width="80">Vaccine Name	</th>
+    <th width="150">Prevented Cancer </th>
+    <th width="150">Significance </th>
+    <th width="150">Reference</th>
+  </tr>
+  <tr>
+    <td >1.</td>
+    <td >HPV Vaccine (Gardasil, Cervarix, Gardasil 9)	</td>
+    <td>Cervical</td>
+    <td>The HPV vaccine prevents cervical cancer by inducing immunity against high-risk HPV types, blocking infection and the development of precancerous and cancerous cervical lesions	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5761024/">(1)</a></td>
+  </tr>
+ 
+       </tbody>
+</table>
+
+</div>
+
+<script>
+// Dropdowns
+var dropdown = document.getElementsByClassName("dropdown-btn");
+for (var i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+// Toggle Sidebar
+var toggleBtn = document.getElementById("toggleBtn");
+var sidenav = document.getElementById("mySidenav");
+var header = document.getElementById("header");
+var mainContent = document.getElementById("mainContent");
+
+function toggleSidebar() {
+  if (sidenav.style.width === "0px") {
+    sidenav.style.width = "200px";
+    header.style.marginLeft = "200px";
+    mainContent.style.marginLeft = "200px";
+    toggleBtn.style.left = "210px";
+  } else {
+    sidenav.style.width = "0px";
+    header.style.marginLeft = "0px";
+    mainContent.style.marginLeft = "0px";
+    toggleBtn.style.left = "10px";
+  }
+}
+
+// Auto close after 3 sec
+setTimeout(function() {
+  toggleSidebar();
+}, 3000);
+
+toggleBtn.onclick = toggleSidebar;
+</script>
+
+</body>
+</html>
