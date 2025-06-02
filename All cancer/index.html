@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: Black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:l;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.download-bar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 20px;
+      margin-left: 220px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .dropbtn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .content {
+      padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: white;
+  color: white;
+}
+}
+</style>
+</head>
+<body>
+<a href="./../factlens_main.html" class="previous">&laquo; Main</a></center>
+</body>
+</html> 
+   <button class="dropdown-btn">Incidence 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="in_both.html">Both sexes</a>
+    <a href="in_male.html">Males</a>
+    <a href="in_male.html">Females</a>
+ </div>
+  <a href="#services"></a>
+   <button class="dropdown-btn">Mortality 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <a href="m_both.html">Both sexes</a>
+      <a href="m_male.html">Males</a>
+      <a href="m_male.html">Females</a>
+  </div>
+  
+   <button class="dropdown-btn">Prevalence 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <a href="p_both.html">Both sexes</a>
+      <a href="p_male.html">Males</a>
+      <a href="p_female.html">Females</a>
+    </div>
+ 
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All cancer</h1>
+ 
+</div>
+<!-- Download Button Below Header, Above Content -->
+<div class="download-bar">
+  <div class="dropdown">
+    <button class="dropbtn">Download ▼</button>
+    <div class="dropdown-content">
+      <a href="all cancer.pdf" download>Download PPTX</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>All cancer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin-left: 50px;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:120px;}
+margin-left: 150px;
+</style>
+</head>
+<body>
+
+<style>
+p.ex1 {
+  margin-left: 250px;
+}
+p.b {
+  margin-left: 250px;
+}
+p.c {
+  margin-left: 250px;
+}
+p.d {
+  margin-left: 250px;
+}
+p.e {
+  margin-left: 250px;
+}
+</style>
+</head>
+<body>
+<p class="ex1">
+ 🔬 <b>Types of Cancer
+<p class="ex1">1. Breast Cancer</b>
+<p class="ex1">Breast cancer is one of the most common cancers among women worldwide. It develops in the cells of the breast, often presenting as a lump or abnormal mammogram. Early detection through self-exams and regular screenings significantly improves survival rates.
+
+<p class="ex1"><b>Key Symptoms:</b> Lump in the breast or underarm, nipple discharge, changes in breast shape/size
+<p class="ex1"><b>Treatment Options:</b> Surgery, radiation therapy, chemotherapy, hormone therapy, targeted therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>2. Vulvar Cancer</b>
+<p class="ex1">Vulvar cancer affects the external female genitalia and is relatively rare. It typically develops slowly and may be linked to human papillomavirus (HPV) infection.
+
+<p class="ex1"><b>Key Symptoms:</b> Itching, burning, pain, or lumps/ulcers in the vulvar area
+<p class="ex1"><b>Treatment Options: </b>Surgery, radiation therapy, chemotherapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>3. Cervical Cancer</b>
+<p class="ex1">Cervical cancer arises in the cervix, the lower part of the uterus. It's strongly associated with HPV infection and can be detected early through routine Pap smears and HPV tests.
+
+<p class="ex1"><b>Key Symptoms:</b> Abnormal vaginal bleeding, pelvic pain, pain during intercourse
+<p class="ex1"><b>Treatment Options:</b> Surgery, radiation, chemotherapy, immunotherapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>4. Prostate Cancer</b>
+<p class="ex1">Prostate cancer is one of the most common cancers in men, particularly those over 50. It often grows slowly and may not cause serious harm if detected early.
+
+<p class="ex1"><b>Key Symptoms:</b> Difficulty urinating, blood in urine/semen, pelvic discomfort
+<p class="ex1"><b>Treatment Options:</b> Active surveillance, surgery, radiation therapy, hormone therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>5. Glioblastoma</b>
+<p class="ex1">Glioblastoma is an aggressive form of brain cancer that originates in the brain’s supportive tissues. It progresses rapidly and is challenging to treat.
+
+<p class="ex1"><b>Key Symptoms:</b> Headaches, seizures, memory loss, personality changes
+<p class="ex1"><b>Treatment Options:</b> Surgery, radiation therapy, chemotherapy, targeted drug therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>6. Lip and Oral Cancer</b>
+<p class="ex1">These cancers affect the lips, mouth, tongue, gums, and throat. Tobacco and alcohol use significantly increase risk.
+
+<p class="ex1"><b>Key Symptoms:</b> Mouth sores that don’t heal, lumps, difficulty chewing or swallowing
+<p class="ex1"><b>Treatment Options:</b> Surgery, radiation therapy, chemotherapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>7. Bladder Cancer</b>
+<p class="ex1">Bladder cancer typically begins in the lining of the bladder and is more common in older adults. Smoking is a significant risk factor.
+
+<p class="ex1"><b>Key Symptoms:</b> Blood in urine, frequent urination, pelvic pain
+<p class="ex1"><b>Treatment Options:</b> Surgery, intravesical therapy, chemotherapy, immunotherapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>8. Colon (Colorectal) Cancer</b>
+<p class="ex1">Colorectal cancer affects the colon or rectum and is preventable with regular screenings like colonoscopies.
+
+<p class="ex1"><b>Key Symptoms:</b> Changes in bowel habits, blood in stool, unexplained weight loss
+<p class="ex1"><b>Treatment Options:</b> Surgery, radiation therapy, chemotherapy, targeted therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>9. Liver Cancer</b>
+<p class="ex1">Liver cancer often develops in people with chronic liver disease, such as hepatitis B/C or cirrhosis.
+
+<p class="ex1"><b>Key Symptoms:</b> Upper abdominal pain, weight loss, jaundice, fatigue
+<p class="ex1"><b>Treatment Options: </b>Surgery, liver transplant, ablation therapy, targeted therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>10. Lung Cancer</b>
+<p class="ex1">Lung cancer is the leading cause of cancer-related deaths globally, with smoking as the major risk factor.
+
+<p class="ex1"><b>Key Symptoms:</b> Persistent cough, chest pain, shortness of breath, coughing up blood
+<p class="ex1"><b>Treatment Options:</b> Surgery, chemotherapy, radiation, immunotherapy, targeted therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>11. Ovarian Cancer</b>
+<p class="ex1">Often called the “silent killer,” ovarian cancer can be difficult to detect early. It begins in the ovaries and may spread to the pelvis and abdomen.
+
+<p class="ex1"><b>Key Symptoms:</b> Abdominal bloating, pelvic pain, frequent urination
+<p class="ex1"><b>Treatment Options:</b> Surgery, chemotherapy, targeted therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>12. Thyroid Cancer</b>
+<p class="ex1">Thyroid cancer affects the thyroid gland and is usually very treatable. It's more common in women and younger adults.
+
+<p class="ex1"><b>Key Symptoms:</b> Lump in the neck, voice changes, difficulty swallowing
+<p class="ex1"><b>Treatment Options:</b> Surgery, radioactive iodine therapy, hormone therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>13. Non-Hodgkin's Lymphoma</b>
+<p class="ex1">This cancer affects the lymphatic system and includes a wide variety of lymphocyte (white blood cell) cancers.
+
+<p class="ex1"><b>Key Symptoms:</b> Swollen lymph nodes, fatigue, fever, weight loss
+<p class="ex1"><b>Treatment Options:</b> Chemotherapy, radiation therapy, immunotherapy, stem cell transplant<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<br><br>
+<p class="ex1"><b>14. Stomach (Gastric) Cancer</b>
+<p class="ex1">Stomach cancer begins in the lining of the stomach and is more common in older individuals.
+
+<p class="ex1"><b>Key Symptoms:</b> Indigestion, loss of appetite, abdominal pain, nausea
+<p class="ex1"><b>Treatment Options:</b> Surgery, chemotherapy, radiation therapy, targeted therapy<a href="https://www.cancer.org/cancer/types.html">Source</a>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

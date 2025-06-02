@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genes associated in Bladder Cancer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+/* Sidebar */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+.active {
+  color: grey;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Toggle Button */
+#toggleBtn {
+  position: fixed;
+  top: 3px;
+  left: 210px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 3;
+  transition: left 0.5s;
+}
+
+/* Header */
+.header {
+  padding: 23px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  margin-left: 200px;
+  transition: margin-left 0.5s;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+  transition: margin-left 0.5s;
+}
+
+/* Table Styling */
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid #cce5ff;
+  text-align: left;
+  padding: 9px;
+}
+
+tr:nth-child(odd) {
+  background: linear-gradient(to bottom, #ffff99 0%, #99ff99 100%);
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidenav" id="mySidenav">
+  <a href="./../factlens_main.html">&laquo; Main</a>
+  <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="in_both.html">Both Sexes</a>
+    <a href="in_male.html">Males</a>
+    <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="m_both.html">Both Sexes</a>
+    <a href="m_male.html">Males</a>
+    <a href="m_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="p_both.html">Both Sexes</a>
+    <a href="p_male.html">Males</a>
+    <a href="p_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+  <a href="drug.html">Drugs</a>
+  <a href="nutri.html">Nutrigenomics</a>
+  <a href="gene.html">Genes</a>
+  <a href="poly.html">Polymorphisms</a>
+  <a href="path.html">Signalling Pathways</a>
+</div>
+
+<button id="toggleBtn"> Menu</button>
+
+<div class="header" id="header">
+  <h1>Genes associated in Bladder Cancer</h1>
+</div>
+
+<div class="main-content" id="mainContent">
+
+<!-- genes Table -->
+<table>
+<thead>
+  <tr>
+    <th width="80">S.No.	</th>
+    <th width="150">Gene </th>
+    <th width="130">Type</th>
+	<th width="200">Molecular Function</th>
+    <th width="250">Significance / Inference</th>
+    <th width="150">Reference</th>
+  </tr>
+  <tr>
+    <td >1.</td>
+    <td >CCNA2</td>
+    <td>Oncogene</td>
+    <td>Cell cycle regulation (G2/M transition)	</td>
+	<td>Overexpressed in bladder cancer; diagnostic marker</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)<a href="https://pubmed.ncbi.nlm.nih.gov/29375713/">(3)</a></td>
+  </tr>
+  <tr><td >2.</td>
+    <td>CCNB1</td>
+    <td>Oncogene</td>
+    <td>Cell cycle progression (mitotic regulation)	</td>
+  <td>High expression correlates with tumor aggressiveness; diagnostic value</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+ 
+  </tr>
+  <tr><td >3.</td>
+    <td>CDK1		</td>
+    <td>Oncogene</td>
+    <td>Cell cycle control (G2/M checkpoint)	</td>
+	<td>Promotes proliferation; strong diagnostic potential</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+  </tr>
+  <tr><td >4.</td>
+    <td>PLK1</td>
+    <td>Oncogene</td>
+    <td>Mitotic kinase activity	</td>
+  <td>Overexpressed in tumors; linked to genomic instability and poor prognosis</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >5.</td>
+    <td>AURKA</td>
+    <td>Oncogene</td>
+    <td>Mitotic spindle assembly	</td>
+  <td>Proto-oncogene; associated with advanced disease and therapeutic resistance</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)<a href="https://pubmed.ncbi.nlm.nih.gov/29375713/">(3)</a></td>
+   </tr><tr><td >6.</td>
+    <td>AURKB</td>
+    <td>Oncogene	</td>
+    <td>Chromosome segregation	</td>
+  <td>Diagnostic marker (AUC = 0.90); implicated in tumor progression</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >7.</td>
+    <td>FOXM1</td>
+    <td>Transcription factor</td>
+    <td>Cell proliferation and differentiation	</td>
+  <td>Drives oncogenesis; interacts with DNA repair pathways (e.g., MSH2/MSH6)</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >8.</td>
+    <td>IL6</td>
+    <td>Cytokine</td>
+    <td>Pro-inflammatory signaling	</td>
+  <td>Promotes tumor microenvironment remodeling; linked to immune evasion</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >9.</td>
+    <td>CALML5	</td>
+    <td>Calcium-binding protein		</td>
+    <td>Cell adhesion and signaling	</td>
+  <td>Overexpressed in tumors; potential role in metastasis</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >10.</td>
+    <td>TOP2A</td>
+    <td>DNA topoisomerase		</td>
+    <td>DNA replication and repair		</td>
+  <td>Therapeutic target; associated with chemoresistance</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >11.</td>
+    <td>CDC20</td>
+    <td>Cell cycle regulator</td>
+    <td>Anaphase-promoting complex activation	</td>
+  <td>Upregulated in bladder cancer; drives mitotic progression</td>
+<td><a href="https://pubmed.ncbi.nlm.nih.gov/29375713/">(3)</a></td>
+   </tr><tr><td >12.</td>
+    <td>ARID1A</td>
+    <td>Tumor suppressor		</td>
+    <td>Chromatin remodeling	</td>
+  <td>Mutated in 25% of tumors; linked to epigenetic dysregulation</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >13.</td>
+    <td>KDM6A</td>
+    <td>Epigenetic regulator	</td>
+    <td>Histone demethylation	</td>
+  <td>Frequently mutated; alters transcriptional programs in tumors</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >14.</td>
+    <td>EP300</td>
+    <td>Transcriptional coactivator	</td>
+    <td>Histone acetylation		</td>
+  <td>Mutated in subsets of bladder cancer; impacts DNA repair pathways</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >15.</td>
+    <td>TP53</td>
+    <td>Tumor suppressor	</td>
+    <td>DNA damage response and apoptosis	</td>
+  <td>Mutated in >50% of muscle-invasive tumors; prognostic marker</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr><tr><td >16.</td>
+    <td>CDKN2A</td>
+    <td>Tumor suppressor		</td>
+    <td>Cell cycle arrest (p16 pathway)	</td>
+  <td>Deleted in aggressive tumors; associated with poor survival</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11507096/">(1)<a href="https://pubmed.ncbi.nlm.nih.gov/39456780/">(2)</a></td>
+   </tr>
+       </tbody>
+</table>
+
+</div>
+
+<script>
+// Dropdowns
+var dropdown = document.getElementsByClassName("dropdown-btn");
+for (var i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+// Toggle Sidebar
+var toggleBtn = document.getElementById("toggleBtn");
+var sidenav = document.getElementById("mySidenav");
+var header = document.getElementById("header");
+var mainContent = document.getElementById("mainContent");
+
+function toggleSidebar() {
+  if (sidenav.style.width === "0px") {
+    sidenav.style.width = "200px";
+    header.style.marginLeft = "200px";
+    mainContent.style.marginLeft = "200px";
+    toggleBtn.style.left = "210px";
+  } else {
+    sidenav.style.width = "0px";
+    header.style.marginLeft = "0px";
+    mainContent.style.marginLeft = "0px";
+    toggleBtn.style.left = "10px";
+  }
+}
+
+// Auto close after 3 sec
+setTimeout(function() {
+  toggleSidebar();
+}, 3000);
+
+toggleBtn.onclick = toggleSidebar;
+</script>
+
+</body>
+</html>

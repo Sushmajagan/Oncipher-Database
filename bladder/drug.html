@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drugs of Bladder Cancer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+/* Sidebar */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+.active {
+  color: grey;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Toggle Button */
+#toggleBtn {
+  position: fixed;
+  top: 3px;
+  left: 210px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 3;
+  transition: left 0.5s;
+}
+
+/* Header */
+.header {
+  padding: 23px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  margin-left: 200px;
+  transition: margin-left 0.5s;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+  transition: margin-left 0.5s;
+}
+
+/* Table Styling */
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid #cce5ff;
+  text-align: left;
+  padding: 9px;
+}
+
+tr:nth-child(odd) {
+ background: linear-gradient(to bottom, #00ff99 0%, #cc66ff 100%);
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidenav" id="mySidenav">
+  <a href="./../factlens_main.html">&laquo; Main</a>
+  <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="in_both.html">Both Sexes</a>
+    <a href="in_male.html">Males</a>
+    <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="m_both.html">Both Sexes</a>
+    <a href="m_male.html">Males</a>
+    <a href="m_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="p_both.html">Both Sexes</a>
+    <a href="p_male.html">Males</a>
+    <a href="p_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+  <a href="drug.html">Drugs</a>
+  <a href="nutri.html">Nutrigenomics</a>
+  <a href="gene.html">Genes</a>
+  <a href="poly.html">Polymorphisms</a>
+  <a href="path.html">Signalling Pathways</a>
+</div>
+
+<button id="toggleBtn"> Menu</button>
+
+<div class="header" id="header">
+  <h1>Drugs of Bladder Cancer</h1>
+</div>
+
+<div class="main-content" id="mainContent">
+
+<!-- drugs Table -->
+<table>
+<thead>
+  <tr>
+  <th width="100">Drug Name	</th>
+    <th width="80">Type</th>
+    <th width="110">Dosage</th>
+    <th width="130">Mechanism of Action</th>
+	<th width="170">Indication</th>
+	<th width="170">Common side effects</th>
+	<th width="270">Alternatives and Allergy Consideration Drug</th>
+	<th width="300">Dosage</th>
+	
+    
+	
+  </tr>
+  <tr><td>Cisplatin</td>
+    <td>Platinum chemotherapy		</td>
+    <td>50–70 mg/m² IV every 3–4 weeks (infused over 6–8 hours)	</td>
+    <td>DNA cross-linking, inhibits DNA synthesis and function	</td>
+	<td>Advanced/metastatic bladder cancer; first-line in combination regimens	</td>
+  <td>Nephrotoxicity, ototoxicity, nausea, myelosuppression	</td>
+  <td>Carboplatin 	</td>
+  <td>AUC 5–6 IV every 3–4 weeks (less nephrotoxic, used if cisplatin-ineligible)<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)</a></td>
+
+  </tr>
+  <tr>
+    <td>Gemcitabine</td>
+    <td>Antimetabolite chemotherapy	</td>
+    <td>1000 mg/m² IV on days 1, 8, and 15 of a 28-day cycle (with cisplatin 70 mg/m² on day 1 or 2)		</td>
+    <td>Nucleoside analog; inhibits DNA synthesis, promotes apoptosis		</td>
+  <td>Advanced/metastatic bladder cancer; part of first-line combination (GemCis)		</td>
+<td>Myelosuppression, liver enzyme elevation, nausea	</td>
+<td>Methotrexate/Vinblastine/Doxorubicin/Cisplatin (MVAC) </td>
+<td>Methotrexate 30 mg/m² (days 1, 15, 22), <br><br>Vinblastine 3 mg/m² (days 2, 15, 22), <br><br>Doxorubicin 30 mg/m² (day 2), Cisplatin 70 mg/m² (day 2), repeat every 28 days, 3 cycles<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)<a href="https://go.drugbank.com/drugs/DB00441">(2)</a></td>
+ </tr>
+  <tr>
+    
+    <td>MVAC	</td>
+    <td>Combination chemotherapy	</td>
+	<td>Methotrexate 30 mg/m² (days 1, 15, 22), <br><br>Vinblastine 3 mg/m² (days 2, 15, 22), <br><br>Doxorubicin 30 mg/m² (day 2), Cisplatin 70 mg/m² (day 2), repeat every 28 days, 3 cycles		</td>
+    <td>Multiple: antimetabolite, microtubule inhibitor, topoisomerase II inhibitor, DNA cross-linking	</td>
+	<td>Advanced/metastatic bladder cancer; alternative to GemCis	</td>
+	<td>Myelosuppression, mucositis, alopecia, infection		</td>
+<td>Gemcitabine <br><br><br><br><br>or<br><br><br><br><br> cisplatin</td>
+<td>1000 mg/m² IV on days 1, 8, and 15 of a 28-day cycle (with cisplatin 70 mg/m² on day 1 or 2)	<br><br><br>50–70 mg/m² IV every 3–4 weeks (infused over 6–8 hours)<br><br>MVAC (with G-CSF support)<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)</a></td>
+  </tr>
+  <tr>
+    <td>Mitomycin</td>
+    <td>Alkylating agent	</td>
+    <td>20 mg/m² intravesical instillation weekly for 6–8 weeks	</td>
+  <td>DNA cross-linking, inhibits DNA synthesis		</td>
+  <td>Non-muscle-invasive (superficial) bladder cancer (intravesical therapy)	</td>
+<td>Bladder irritation, dysuria, hematuria	</td> 
+<td>Gemcitabine </td> 
+<td>2000 mg in 50 mL saline intravesically weekly for 6 weeks<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)<a href="https://www.cancer.org/cancer/types/bladder-cancer/treating/intravesical-therapy.html">(3)</a></td>
+ </tr> <tr>
+    <td>Thiotepa</td>
+    <td>Alkylating agent		</td>
+    <td>60 mg in 30–60 mL NaCl intravesically weekly for 4 weeks	</td>
+  <td>60 mg in 30–60 mL NaCl intravesically weekly for 4 weeks	</td>
+  <td>Superficial papillary bladder cancer	</td>
+<td>Bladder irritation, myelosuppression	</td> 
+<td>Mitomycin </td> 
+<td>20 mg/m² intravesical instillation weekly for 6–8 weeks	<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)</a>	</td> 
+ </tr> <tr>
+    <td>BCG (Bacillus Calmette-Guérin)	</td>
+    <td>Immunotherapy</td>
+    <td>81 mg (1 vial) intravesical weekly for 6 weeks; maintenance at 3, 6, 12, 18, 24 months	</td>
+  <td>Activates local immune response in bladder mucosa		</td>
+  <td>Non-muscle-invasive bladder cancer (intermediate/high risk)	</td>
+<td>Cystitis, fever, malaise, rare systemic BCG infection	</td> 
+<td>Intravesical mitomycin </td> 
+<td>2000 mg in 50 mL saline intravesically weekly for 6 weeks<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)<a href="https://www.cancer.org/cancer/types/bladder-cancer/treating/intravesical-therapy.html">(3)<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9164628/">(4)</a></td>
+ </tr> <tr>
+    <td>Avelumab</td>
+    <td>Immunotherapy (PD-L1)	</td>
+    <td>800 mg IV every 2 weeks	</td>
+  <td>Blocks PD-L1, restoring T-cell antitumor activity	</td>
+  <td>Advanced/metastatic urothelial carcinoma as maintenance after platinum chemo or progression	</td>
+<td>Infusion reactions, fatigue, nausea, immune-related effects		</td> 
+<td>Pembrolizumab <br><br><br><br><br><br> Nivolumab</td> 
+<td>200 mg IV every 3 weeks;<br><br><br>240 mg IV every 2 weeks or 480 mg every 4 weeks<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9164628/">(4)</a></td>
+ </tr> <tr>
+    <td>Pembrolizumab</td>
+    <td>Immunotherapy (PD-1)		</td>
+    <td>200 mg IV every 3 weeks		</td>
+  <td>Blocks PD-L1, restoring T-cell antitumor activity	</td>
+  <td>BCG-unresponsive high-risk non-muscle-invasive bladder cancer, advanced/metastatic	</td>
+<td>Immune-related: colitis, pneumonitis, rash, fatigue		</td> 
+<td>Avelumab <br><br><br><br><br><br> Nivolumab</td> 
+<td>800 mg IV every 2 weeks<br><br><br>240 mg IV every 2 weeks or 480 mg every 4 weeks<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9164628/">(4)</a></td>
+ </tr> <tr>
+    <td>Nivolumab</td>
+    <td>Immunotherapy (PD-L1)	</td>
+    <td>360 mg IV every 3 weeks (with chemo), then 240 mg IV every 2 weeks or 480 mg every 4 weeks (maintenance)		</td>
+  <td>Blocks PD-L1, restoring T-cell antitumor activity	</td>
+  <td>Unresectable/metastatic urothelial carcinoma, often with cisplatin/gemcitabine		</td>
+<td>Immune-related: rash, diarrhea, fatigue, infusion reactions</td> 
+<td>Pembrolizumab <br><br><br><br><br><br> Avelumab</td> 
+<td>200 mg IV every 3 weeks;<br><br><br>800 mg IV every 2 weeks	<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9164628/">(4)</a></td>
+ </tr> <tr>
+    <td>Nogapendekin alfa inbakicept (Anktiva)	</td>
+    <td>Immunotherapy (IL-15 agonist)	</td>
+    <td>400 μg intravesical weekly for 6 weeks (with BCG), then maintenance as per protocol	</td>
+  <td>Activates NK and T cells in bladder mucosa	</td>
+  <td>	NMIBC with CIS not responding to BCG alone	</td>
+<td>	Bladder pain, dysuria, hematuria	</td> 
+<td>Nadofaragene firadenovec </td> 
+<td>75 mL (3 x 10¹¹ viral particles/mL) intravesical every 3 months	<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9164628/">(4)</a></td>
+ </tr> <tr>
+    <td>Nadofaragene firadenovec (Adstiladrin)	</td>
+    <td>Gene therapy (interferon)	</td>
+    <td>75 mL (3 x 10¹¹ viral particles/mL) intravesical every 3 months	</td>
+  <td>Delivers IFN-α2b gene to bladder cells, boosting immune response	</td>
+  <td>NMIBC at high risk of recurrence not helped by BCG	</td>
+<td>Bladder spasms, frequent urination, hematuria	</td> 
+<td>Anktiva<br><br><br><br>or<br><br> BCG</td> 
+<td>400 μg intravesical weekly for 6 weeks (with BCG), then maintenance as per protocol	<br><br><br>81 mg (1 vial) intravesical weekly for 6 weeks; maintenance at 3, 6, 12, 18, 24 months	<a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9164628/">(4)</a></td>
+ </tr> <tr>
+    <td>Enfortumab vedotin-ejfv	</td>
+    <td>Antibody-drug conjugate		</td>
+    <td>1.25 mg/kg IV on days 1, 8, 15 of 28-day cycle	</td>
+  <td>Targets Nectin-4, delivers MMAE cytotoxin		</td>
+  <td>Locally advanced/metastatic urothelial carcinoma after platinum and immunotherapy	</td>
+<td>Peripheral neuropathy, rash, hyperglycemia, fatigue	</td> 
+<td>No direct alternative; consider other systemic chemotherapy or immunotherapy agents	</td> 
+<td><a href="https://www.cancertherapyadvisor.com/ddi/bladder-cancer-treatment-pharmacologic-management/">(1)</a></td>
+ </tr> 
+    </tbody>
+</table>
+
+</div>
+
+<script>
+// Dropdowns
+var dropdown = document.getElementsByClassName("dropdown-btn");
+for (var i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+// Toggle Sidebar
+var toggleBtn = document.getElementById("toggleBtn");
+var sidenav = document.getElementById("mySidenav");
+var header = document.getElementById("header");
+var mainContent = document.getElementById("mainContent");
+
+function toggleSidebar() {
+  if (sidenav.style.width === "0px") {
+    sidenav.style.width = "200px";
+    header.style.marginLeft = "200px";
+    mainContent.style.marginLeft = "200px";
+    toggleBtn.style.left = "210px";
+  } else {
+    sidenav.style.width = "0px";
+    header.style.marginLeft = "0px";
+    mainContent.style.marginLeft = "0px";
+    toggleBtn.style.left = "10px";
+  }
+}
+
+// Auto close after 3 sec
+setTimeout(function() {
+  toggleSidebar();
+}, 3000);
+
+toggleBtn.onclick = toggleSidebar;
+</script>
+
+</body>
+</html>

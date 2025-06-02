@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <style>
+    body {
+
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    #toggleBtn {
+      position: fixed;
+      top: 3px;
+      left: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #333333;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 3;
+      transition: left 0.5s;
+    }
+
+    .header {
+      padding: 23px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+      font-size: 30px;
+      transition: margin-left 0.5s;
+    }
+
+    .main-content {
+      margin-left: 0;
+      padding: 20px;
+      transition: margin-left 0.5s;
+    }
+
+    table {
+	 margin: 0 auto; /* centers the table horizontally */
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      border: 1px solid #cce5ff;
+      text-align: left;
+      padding: 15px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #006d77;
+      color: white;
+    }
+
+    tr:nth-child(odd) td {
+      background: linear-gradient(to right, #ff9966, #ff99cc);
+    }
+
+    tr:nth-child(even) td {
+      background-color: #ffffff;
+    }
+
+    a {
+      color: #004085;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<button id="toggleBtn"><a href="dashbiard_2.html" style="text-decoration:none; color:white;">Menu</a></button>
+
+<div class="header" id="header">
+  <h1>Allelic Loci</h1>
+</div>
+
+<div class="main-content" id="mainContent">
+  <table>
+    <thead>
+      <tr>
+        <th width="100">S. No.</th>
+        <th width="200">Cancer Type</th>
+        <th width="300">Key Allelic Loci</th>
+        <th width="100">Mechanism</th>
+        <th width="100">Clinical Impact</th>
+        <th width="100">Reference</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Lip and Oral Cavity</td>
+        <td>6p21.32 (HLA-DQB1), 11p15.4 (TRIM5), rs221636 (Lin28B)</td>
+        <td>Immune modulation, viral defense, miRNA regulation</td>
+        <td>HPV+ oropharyngeal cancer risk modulation</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Stomach</td>
+        <td>8p21-22 (near D8S258)</td>
+        <td>LOH targeting putative tumor suppressor</td>
+        <td>Higher-grade progression in gastric adenocarcinoma</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Colon</td>
+        <td>8q24 (MYC), 18q21 (SMAD7), rs6983267, 1q25.3 (LAMC1), CCND2, TBX3</td>
+        <td>Oncogene activation, TGF-β pathway dysregulation, chemoradiation resistance</td>
+        <td>Shorter DFS, higher recurrence risk, ~35% heritable risk</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Liver & Intrahepatic Bile Ducts</td>
+        <td>Limited data</td>
+        <td>Chronic inflammation, field defects</td>
+        <td>Insufficient genomic evidence for specific loci</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Trachea, Bronchus, Lung</td>
+        <td>HLA-II (e.g., DRB1), KRAS (rare alleles D33E, A59G)</td>
+        <td>Antigen presentation, MAPK/PI3K pathway activation</td>
+        <td>Increased risk and aggressive phenotype, especially in DRB1 homozygotes</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6464125/">(2)</a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Breast</td>
+        <td>10q26.13 (FGFR2), 16q12.1 (TOX3), 2q35 (IGFBP5), 6q22.33 (RNF146, ECHDC1)</td>
+        <td>Growth factor signaling, DNA repair deficiency, IGF pathway, ubiquitin ligase pathway</td>
+        <td>~16% attributable risk, high-risk subtypes, familial clustering</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Vulva</td>
+        <td>6p21.3 (HLA region), 17q12 (HNF1B)</td>
+        <td>Immune response, cell cycle regulation</td>
+        <td>Increased risk in HPV-associated cases, rare familial clustering</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Cervix Uteri</td>
+        <td>6p21.3 (HLA class II), 17q12 (HNF1B), 5p15.33 (TERT)</td>
+        <td>Immune evasion, telomere maintenance, cell cycle control</td>
+        <td>Major impact in HPV+ cervical cancer, influences progression and response to therapy</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Ovary</td>
+        <td>17q21 (BRCA1), 13q12.3 (BRCA2), 19p13.11, 8q24</td>
+        <td>DNA repair deficiency, regulatory variants</td>
+        <td>High familial risk, influences screening and prophylactic intervention</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Prostate</td>
+        <td>8q24 (MYC), 17q12 (HNF1B), 10q11 (MSMB), SAMHD1, 137+ loci</td>
+        <td>Oncogene activation, DNA repair, regulatory variants</td>
+        <td>Multiple loci explain ~30% familial risk, used in polygenic risk scores</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Bladder</td>
+        <td>8q24, 4p16.3 (FGFR3), 8p22 (NAT2)</td>
+        <td>Oncogene activation, detoxification pathway</td>
+        <td>Risk stratification, therapeutic targeting</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Non-Hodgkin Lymphoma</td>
+        <td>9p21 (near CDKN2), 6p21.32 (HLA)</td>
+        <td>LOH, immune modulation</td>
+        <td>High-grade progression, immune-related subtypes</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Thyroid</td>
+        <td>9q22 (FOXE1), 5p15.33 (TERT), ATM, CHEK2, TP53, DIRC3, NRG1, VAV3, INSR</td>
+        <td>DNA repair, telomere maintenance, TSH regulation, MAPK/PI3K–AKT pathway activation</td>
+        <td>51+ loci identified, polygenic risk, 8.8-fold risk with >5 risk alleles, subtype-specific genetic clusters</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Glioblastoma Multiforme</td>
+        <td>STAT3, CSF3R, 9p21, 10q, 1p/19q</td>
+        <td>Immune evasion, LOH, driver mutations</td>
+        <td>Shorter survival with LOH, ethnic variability in risk</td>
+        <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2953976/">(1)</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  var toggleBtn = document.getElementById("toggleBtn");
+  var header = document.getElementById("header");
+  var mainContent = document.getElementById("mainContent");
+
+  function toggleSidebar() {
+    let currentLeft = parseInt(toggleBtn.style.left);
+    if (currentLeft > 100) {
+      toggleBtn.style.left = "10px";
+      header.style.marginLeft = "0px";
+      mainContent.style.marginLeft = "0px";
+    } else {
+      toggleBtn.style.left = "210px";
+      he

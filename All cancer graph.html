@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Cancer Database </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">Onco Base</span>
+    </div>						
+      <ul class="nav-links">
+        <li>
+		<a href="home.html" class="active">
+		             <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Data and Methods</span>
+          </a>
+        </li>
+        <li>
+          <a href="factlens_main.html" class="active">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Fact lens</span>
+          </a>
+        </li>
+        <li>
+         <a href="all_linechart.html" class="active">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Data visualization</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="explore">Explore</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+    </nav>
+   <div class="home-content">
+               <span class="icon-button">
+                                     </span>
+                </a></a>
+				
+				
+    <div class="card">
+        <div class="card-content">
+            <div id="line-chart"></div>
+        </div>
+    </div
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global cancer incidence: both sexes</title>
+    <link rel="stylesheet" href="all_cancer_style.css">
+</head>
+<body>
+
+<span><h1><center>Global cancer incidence: both sexes</center></h1></span>
+
+    <div class="container">
+        <div class="content">
+            <div>
+                <div class="image">
+                    <img src="images_ppt/lung.png">
+                </div>
+                <div class="bar" style ="--clr1: #800080; --clr2: #C71585;">
+                    <span class="progress" id="95"></span>
+                    <h2>Trachea,bronchus,lung</h2>
+                    <h1>19,976,499</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="images_ppt/breast.png" height="100px" width="80px">
+                </div>
+                <div class="bar" style ="--clr1: #32cd32; --clr2: #7cf502;">
+                    <span class="progress" id="90"></span>
+                    <h2>Breast</h2>
+                    <h1>2,296,840</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="images_ppt/colon.png">
+                </div>
+                <div class="bar" style ="--clr1: #30bdb8; --clr2: #40e0d0;">
+                    <span class="progress" id="85"></span>
+                    <h2>Colorectum</h2>
+                    <h1>1,926,425</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="images_ppt\prostate.png">
+                </div>
+                <div class="bar" style ="--clr1: #ff8000; --clr2: #ffff00;">
+                    <span class="progress" id="80"></span>
+                    <h2>Prostate</h2>
+                    <h1>1,467,854</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="images_ppt/stomach.png">
+                </div>
+                <div class="bar" style ="--clr1: #dc143c; --clr2: #ff69b4;">
+                    <span class="progress" id="75"></span>
+                    <h2>Stomach</h2>
+                    <h1>968,784</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/liver.png">
+                </div>
+                <div class="bar" style ="--clr1: #ff8000; --clr2:#FF7F50;">
+                    <span class="progress" id="73"></span>
+                    <h2>Liver and intrahepatic 
+					             <pre>bile ducts</h2></pre>
+                    <h1>866,136</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/thyroid.png">
+                </div>
+                <div class="bar" style ="--clr1: #FA8072; --clr2: #6495ED;">
+                    <span class="progress" id="71"></span>
+                    <h2>Thyroid</h2>
+                    <h1>821,214	</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/uteri.png">
+                </div>
+                <div class="bar" style ="--clr1: #295095; --clr2: #3b1c6c;">
+                    <span class="progress" id="70"></span>
+                    <h2>Cervix uteri</h2>
+                    <h1>662,301</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/prostate.png">
+                </div>
+                <div class="bar" style ="--clr1: #955bc9; --clr2: #885484;">
+                    <span class="progress" id="68"></span>
+                    <h2>Bladder</h2>
+                    <h1>614,298</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/NHL.png">
+                </div>
+                <div class="bar" style ="--clr1: #98FB98; --clr2: #2E8B57;">
+                    <span class="progress" id="60"></span>
+                    <h2>Non-Hodgkin lymphoma</h2>
+                    <h1>553,389</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/oesophagus.png">
+                </div>
+                <div class="bar" style ="--clr1: #FF7F50; --clr2: #FF6347;">
+                    <span class="progress" id="58"></span>
+                    <h2>Oesophagus</h2>
+                    <h1>511,054</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/pancreas.png">
+                </div>
+                <div class="bar" style ="--clr1: #4682B4; --clr2: #B0E0E6;">
+                    <span class="progress" id="54"></span>
+                    <h2>Pancreas</h2>
+                    <h1>510,992</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/leukemia.png">
+                </div>
+                <div class="bar" style ="--clr1: #FF0000; --clr2: #FF0000;">
+                    <span class="progress" id="50"></span>
+                    <h2>Leukaemia</h2>
+                    <h1>487,294</h1>
+                </div>
+            </div>
+			<div>
+                <div class="image">
+                    <img src="images_ppt/kidney.png">
+                </div>
+                <div class="bar" style ="--clr1: #FF6347; --clr2: #FF6347;">
+                    <span class="progress" id="47"></span>
+                    <h2>Kidney</h2>
+                    <h1>434,840</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/corpus.png">
+                </div>
+                <div class="bar" style ="--clr1: #800000; --clr2: #800000;">
+                    <span class="progress" id="46"></span>
+                    <h2>Corpus uteri</h2>
+                    <h1>420,368</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/mouth.png">
+                </div>
+                <div class="bar" style ="--clr1: #696969; --clr2: #696969;">
+                    <span class="progress" id="43"></span>
+                    <h2>Lip, oral cavity</h2>
+                    <h1>389,846</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/skin.png">
+                </div>
+                <div class="bar" style ="--clr1: #2F4F4F; --clr2: #2F4F4F;">
+                    <span class="progress" id="41"></span>
+                    <h2>Melanoma of skin</h2>
+                    <h1>331,722</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/ovary.png">
+                </div>
+                <div class="bar" style ="--clr1: #BFAFB2; --clr2: #BFAFB2;">
+                    <span class="progress" id="40"></span>
+                    <h2>Ovary</h2>
+                    <h1>324,603</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/brain.png">
+                </div>
+                <div class="bar" style ="--clr1: #9900cc; --clr2: #9900cc;">
+                    <span class="progress" id="39"></span>
+                    <h2>Brain, central nervous system</h2>
+                    <h1>321,731</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/larynx.png">
+                </div>
+                <div class="bar" style ="--clr1: #cccc00; --clr2: #cccc00;">
+                    <span class="progress" id="37"></span>
+                    <h2>Larynx</h2>
+                    <h1>189,191</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/multiple.png">
+                </div>
+                <div class="bar" style ="--clr1: #B2BEB5; --clr2: #B2BEB5;">
+                    <span class="progress" id="36"></span>
+                    <h2>Multiple myeloma</h2>
+                    <h1>187,952</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/gallbladder.png">
+                </div>
+                <div class="bar" style ="--clr1: #614051; --clr2: #614051;">
+                    <span class="progress" id="34"></span>
+                    <h2>Gallbladder</h2>
+                    <h1>122,491</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/nasal.png">
+                </div>
+                <div class="bar" style ="--clr1: #6C541E; --clr2: #6C541E;">
+                    <span class="progress" id="33"></span>
+                    <h2>Nasopharynx</h2>
+                    <h1>120,434</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/oropharynx.png">
+                </div>
+                <div class="bar" style ="--clr1: #FBEC5D; --clr2: #FBEC5D;">
+                    <span class="progress" id="32"></span>
+                    <h2>Oropharynx</h2>
+                    <h1>106,400</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/hypopharynx.png">
+                </div>
+                <div class="bar" style ="--clr1: #7BB661; --clr2: #7BB661;">
+                    <span class="progress" id="31"></span>
+                    <h2>Hypopharynx</h2>
+                    <h1>86,257</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/HL.png">
+                </div>
+                <div class="bar" style ="--clr1: #dc143c; --clr2: #ff69b4;">
+                    <span class="progress" id="30"></span>
+                    <h2>Hodgkin lymphoma</h2>
+                    <h1>82,469</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/testis.png">
+                </div>
+                <div class="bar" style ="--clr1: #3D0C02; --clr2: #3D0C02;">
+                    <span class="progress" id="29"></span>
+                    <h2>Testis</h2>
+                    <h1>72,040</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/salivary.png">
+                </div>
+                <div class="bar" style ="--clr1: #007FFF; --clr2: #007FFF;">
+                    <span class="progress" id="27"></span>
+                    <h2>Salivary glands</h2>
+                    <h1>55,083</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/vulva.png">
+                </div>
+                <div class="bar" style ="--clr1: #CAE00D; --clr2: #CAE00D;">
+                    <span class="progress" id="25"></span>
+                    <h2>Vulva</h2>
+                    <h1>47,336</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/penis.png">
+                </div>
+                <div class="bar" style ="--clr1: #54626F; --clr2: #54626F;">
+                    <span class="progress" id="23"></span>
+                    <h2>Penis</h2>
+                    <h1>37,700	</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/BM.png">
+                </div>
+                <div class="bar" style ="--clr1: #004225	; --clr2: #004225	;">
+                    <span class="progress" id="21"></span>
+                    <h2>Kaposi sarcoma</h2>
+                    <h1>35,813</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/Mesothelioma.png">
+                </div>
+                <div class="bar" style ="--clr1: #E23D28; --clr2: #E23D28;">
+                    <span class="progress" id="20"></span>
+                    <h2>Mesothelioma</h2>
+                    <h1>30,633</h1>
+                </div>
+            </div>
+			<div>
+			<div class="image">
+                    <img src="images_ppt/vagina.png">
+                </div>
+                <div class="bar" style ="--clr1: #FF3800; --clr2: #FF3800;">
+                    <span class="progress" id="10"></span>
+                    <h2>Vagina</h2>
+                    <h1>18,819</h1>
+                </div>
+            </div>
+			<div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

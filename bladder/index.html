@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: Black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:l;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.download-bar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 20px;
+      margin-left: 220px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .dropbtn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .content {
+      padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: white;
+  color: white;
+}
+}
+</style>
+</head>
+<body>
+<a href="./../factlens_main.html" class="previous">&laquo; Main</a></center>
+</body>
+</html> 
+   <button class="dropdown-btn">Incidence 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="in_both.html">Both sexes</a>
+    <a href="in_male.html">Males</a>
+    <a href="in_male.html">Females</a>
+ </div>
+  <a href="#services"></a>
+   <button class="dropdown-btn">Mortality 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <a href="m_both.html">Both sexes</a>
+      <a href="m_male.html">Males</a>
+      <a href="m_male.html">Females</a>
+  </div>
+  
+   <button class="dropdown-btn">Prevalence 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <a href="p_both.html">Both sexes</a>
+      <a href="p_male.html">Males</a>
+      <a href="p_female.html">Females</a>
+    </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+   <a href="drug.html">Drugs</a>
+    <a href="nutri.html">Nutrigenomics</a>
+     <a href="gene.html">Genes</a>
+     <a href="poly.html">Polymorphisms</a>
+	  <a href="path.html">Signalling Pathways</a>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bladder cancer</h1>
+ 
+</div>
+<!-- Download Button Below Header, Above Content -->
+<div class="download-bar">
+  <div class="dropdown">
+    <button class="dropbtn">Download ▼</button>
+    <div class="dropdown-content">
+      <a href="picture.zip" download>Download Images</a>
+      <a href="pathway.mp4" download>Download Video</a>
+      <a href="bladder.pdf" download>Download PPTX</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bladder cancer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin-left: 50px;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:120px;}
+margin-left: 150px;
+</style>
+</head>
+<body>
+
+<style>
+p.ex1 {
+  margin-left: 250px;
+}
+p.b {
+  margin-left: 250px;
+}
+p.c {
+  margin-left: 250px;
+}
+p.d {
+  margin-left: 250px;
+}
+p.e {
+  margin-left: 250px;
+}
+</style>
+</head>
+<body>
+<p class="ex1">
+ <b>Bladder cancer</b> occurs when cells in the bladder start to grow without control. The bladder is a hollow, balloon-shaped organ in the lower part of the abdomen that stores urine.<a href="https://www.cancer.gov/types/bladder">Source</a>
+
+<p class="e">The bladder has a muscular wall that allows it to get larger to store urine made by the kidneys and to shrink to squeeze urine out of the body. There are two kidneys, one on each side of the backbone, above the waist. The bladder and kidneys work together to remove toxins and wastes from your body through urine:
+
+<p class="e">1.Tiny tubules in the kidneys filter and clean the blood.
+<p class="e">2.These tubules take out waste products and make urine.
+<p class="e">3.The urine passes from each kidney through a long tube called a ureter into the bladder.
+<p class="e">4.The bladder holds the urine until it passes through a tube called the urethra and leaves the body.<a href="https://www.cancer.gov/types/bladder">Source</a>
+<center><img src="an.png"></center>
+<p class="e">Anatomy of the  urinary system showing the kidneys, ureters, bladder, and urethra. The inside of the left kidney shows the renal pelvis. An inset shows the renal tubules and urine. 
+<p class="b"><b>Types of bladder cancer</b>
+<p class="c"><b>Urothelial carcinoma </b>(also called transitional cell carcinoma) is cancer that begins in the urothelial cells, which line the urethra, bladder, ureters, renal pelvis, and some other organs. Almost all bladder cancers are urothelial carcinomas.<a href="https://www.cancer.gov/types/bladder">Source</a>
+
+<p class="c">Urothelial cells are also called transitional cells because they change shape. These cells are able to stretch when the bladder is full of urine and shrink when it is emptied.<a href="https://www.cancer.gov/types/bladder">Source</a>
+
+<p class="b"><b>Other types of bladder cancer are rare:</b>
+
+<p class="c"><b>Squamous cell carcinoma</b> is cancer that begins in squamous cells (thin, flat cells lining the inside of the bladder). This type of cancer may form after long-term irritation or infection with a tropical parasite called schistosomiasis, which is common in Africa and the Middle East but rare in the United States. When chronic irritation occurs, transitional cells that line the bladder can gradually change to squamous cells.
+<p class="c"><b>Adenocarcinoma</b> is cancer that begins in glandular cells that are found in the lining of the bladder. Glandular cells in the bladder make mucus and other substances.
+<p class="c">Small cell carcinoma</b> of the bladder is cancer that begins in neuroendocrine cells (nerve-like cells that release hormones into the blood in response to a signal from the nervous system).
+<p class="b"><b>There are other ways to describe bladder cancer:</b>
+<p class="c"><b>Non-muscle-invasive bladder cancer</b> is cancer that has not reached the muscle wall of the bladder. Most bladder cancers are non-muscle-invasive.
+<p class="c"><b>Muscle-invasive bladder cancer</b> is cancer that has spread through the lining of the bladder and into the muscle wall of the bladder or beyond it.<a href="https://www.cancer.gov/types/bladder">Source</a>
+<p class="e"><b>Risk factors for Bladder cancer</b></p>
+<p class="e">Using tobacco, especially smoking cigarettes, is a major risk factor for bladder cancer. Tobacco contains harmful chemicals called carcinogens.
+<p class="e"><b>Other risk factors for bladder cancer include</b>
+<p class="d">-->having a family history of bladder cancer
+<p class="d">-->having certain changes in the genes that are linked to bladder cancer, such as HRAS, RB1, PTEN/MMAC1, NAT2, and GSTM1
+<p class="d">-->being exposed to paints, dyes, metals, or petroleum products in the workplace
+<p class="d">-->past treatment with radiation therapy to the pelvis or with certain anticancer drugs, such as cyclophosphamide or ifosfamide
+<p class="d">-->taking the Chinese herb Aristolochia fangchi
+<p class="d">-->drinking water from a well that has high levels of arsenic
+<p class="d">-->drinking water that has been treated with chlorine
+<p class="d">-->having a bladder infection caused by a parasite called Schistosoma haematobium, which is common in Africa and the Middle East but rare in the United States
+<p class="d">-->using urinary catheters for a long time
+<p class="e">The symptoms of bladder cancer can vary from person to person. The most common symptom is blood in the urine, called hematuria. It’s often slightly rusty to bright red in color. You may see blood in your urine at one point, then not see it again for a while. Sometimes there are very small amounts of blood in the urine that can only be found by having a test done.<a href="https://www.cancer.gov/types/bladder">Source</a>
+<p class="e"><b>Other common symptoms of bladder cancer include</b>
+
+<p class="d">-->frequent urination
+<p class="d">-->pain or burning during urination
+<p class="d">-->feeling as if you need to urinate even if your bladder isn’t full
+<p class="d">-->urinating often during the night
+<p class="e"><b>When the cancer has grown large or spread beyond the bladder to other parts of the body, symptoms may include</b>
+
+<p class="d">-->being unable to urinate
+<p class="d">-->lower back pain on one side of the body
+<p class="d">-->pain in the abdomen
+<p class="d">-->bone pain or tenderness
+<p class="d">-->unintended weight loss and loss of appetite
+<p class="d">-->swelling in the feet
+<p class="d">-->feeling tired<a href="https://www.cancer.gov/types/bladder">Source</a>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

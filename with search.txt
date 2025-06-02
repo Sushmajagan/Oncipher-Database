@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Cancer Database </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">Onco Base</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+		<a href="dashbiard_2.html" class="active">
+		             <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Data and Methods</span>
+          </a>
+        </li>
+        <li>
+          <a href="factlens_main.html">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Fact lens</span>
+          </a>
+        </li>
+        <li>
+         <a href="all_linechart.html" class="active">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Data visualization</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="explore">Explore</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+    </nav>
+   <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><a href="All cancer/incidence.html"></a><b>All cancers</b></div>
+              
+		<div class="text"><a href="All cancer/incidence.html"><ul><li>All cancers</li></a>
+		</ul><img src="images/all_icon.png" alt="" width="100" height="100" align="right">
+		</div>
+			             <div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a></a>
+             
+            </div>
+          </div>
+        </div>
+		
+		
+		
+        <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><b>Lip,oral,cavity and pharynx</b></div>
+			
+              <img src="images_ppt/oral.png" alt="" width="90" height="90" align="right">
+		<div class="text">
+		<a href="lip/index.html"><b>Lip,oral cavity</b>
+				</ul>
+		</div>
+			             <div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a>
+             
+            </div>
+          </div>
+        </div>
+		
+		 <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><b>Digestive organs </b></div>
+			<a href="#">
+              <img src="images_ppt/stomach.png" alt="" width="80" height="80" align="right">
+		<div class="text"><ul>
+				<a href="stomach/index.html"<li>Stomach</li>
+		<li>Colon</li>
+				<li>Liver and Intrahepatic bile ducts</li>
+		
+		</ul>
+		</div>
+		          <div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a>
+                        </div>
+          </div>
+        </div>
+		
+		
+		 
+		
+		
+		 <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><b>Respiratory system and intrathroraic organs</b></div>
+			<a href="#">
+              
+		<div class="text"><ul>
+				<li>Trachea,bronchus and lung</li>
+				</div><img src="images_ppt/lung.png" alt="" width="100" height="100" align="right">
+	<div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a>
+             
+            </div>
+          </div>
+        </div>
+	
+	
+		 <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><b>Female organs</b></div>
+			<a href="#">
+              
+		<div class="text" ><ul>
+		<a href="breast/index.html"><li>Breast</li></a>
+		<a href="vulva/index.html"><li>Vulva</li></a>
+		<a href="cervix/index.html"><li>Cervix uteri</li></a>
+		<a href="ovary/index.html"><li>Ovary</li></ul></div><img src="images_ppt/uteri.png" alt="" width="80" height="80" align="right"></a>
+		<div class="indicator">
+		<span class="icon-button"></span></a>
+		</div>
+		 </div>
+        </div>
+		
+		
+		
+		 <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><b>Male organs</b></div>
+			<a href="#">
+            
+		<div class="text">
+		<li>Prostate</li>
+		</ul> <img src="images_ppt/penis.png" alt="" width="100" height="100" align="right">
+		</div>
+			             <div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a>
+             
+            </div>
+          </div>
+        </div>
+		
+		
+		
+		 <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><b>Urinary tract</b></div>
+			<a href="#">
+              
+		<div class="text"><ul>
+				<li>Bladder</li>
+		</ul><img src="images_ppt/urinary.png" alt="" width="100" height="100" align="right">
+		</div>
+			             <div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a>
+             
+            </div>
+          </div>
+        </div>
+		
+		
+		 <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><b><pre>Lymphoid,</pre>
+			haematopoietic and related tissue</b></div>
+			<a href="#">
+              
+		<div class="text">
+		Non-Hodgkin lymphoma
+		<img src="" alt="" width="80" height="80" align="right">
+		</div>
+				<div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a>
+             
+            </div>
+          </div>
+        </div>	
+		<div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic"><b>Other cancers</b></div>
+			
+              
+		<div class="text">
+				<a href="#">Thyroid
+		
+			
+		</ul><img src="images_ppt/thyroid.png" alt="" width="80" height="80" align="right">
+		</div>
+			             <div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a>
+             
+            </div>
+          </div>
+        </div>
+				   <span class="icon-button">
+                                     </span>       
+									 <div class="box">
+          <div class="centre-side"> 
+            <div class="box-topic">
+<b><pre>Rare cancer</pre></b>
+</div>
+<a href="#">
+              
+<div class="text"><ul>
+<li>Glioblastoma</li></ul><img src="images/lymph.png" alt="" width="80" height="80" align="right">
+		</div>
+				<div class="indicator">
+           <span class="icon-button">
+                                     </span>
+                </a>
+             
+            </div>
+          </div>
+        </div>	
+           
+       
+<span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span><span class="icon-button">
+                                     </span>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
