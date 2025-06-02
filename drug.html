@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drugs of Breast Cancer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+/* Sidebar */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+.active {
+  color: grey;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Toggle Button */
+#toggleBtn {
+  position: fixed;
+  top: 3px;
+  left: 210px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 3;
+  transition: left 0.5s;
+}
+
+/* Header */
+.header {
+  padding: 23px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  margin-left: 200px;
+  transition: margin-left 0.5s;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+  transition: margin-left 0.5s;
+}
+
+/* Table Styling */
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid #cce5ff;
+  text-align: left;
+  padding: 9px;
+}
+
+tr:nth-child(odd) {
+   background: linear-gradient(to bottom, #00ff99 0%, #cc66ff 100%);
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidenav" id="mySidenav">
+  <a href="./../factlens_main.html">&laquo; Main</a>
+  <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+
+    <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+ 
+    <a href="m_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+  
+    <a href="p_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+  <a href="drug.html">Drugs</a>
+  <a href="nutri.html">Nutrigenomics</a>
+  <a href="gene.html">Genes</a>
+  <a href="poly.html">Polymorphisms</a>
+     <a href="path.html">Signalling Pathway</a>
+  </div>
+</div>
+
+<button id="toggleBtn"> Menu</button>
+
+<div class="header" id="header">
+  <h1>Drugs of Breast Cancer</h1>
+</div>
+
+<div class="main-content" id="mainContent">
+
+<!-- drug Table -->
+<table>
+<thead>
+  <tr>
+  <th width="70">Drug Name	</th>
+    <th width="160">Type</th>
+    <th width="180">Dosage</th>
+    <th width="170">Mechanism of Action</th>
+	<th width="170">Indication</th>
+	<th width="150">Common side effects</th>
+	<th width="170">Alternatives and Allergy Consideration Drug</th>
+	<th width="270">Dosage</th>
+	
+    
+	
+  </tr>
+  <tr><td>Anastrozole	</td>
+    <td>Aromatase inhibitor (AI)		</td>
+    <td>1 mg orally once daily	</td>
+    <td>Selective, competitive inhibition of aromatase enzyme, reducing estrogen synthesis	</td>
+	<td>Hormone receptor-positive (HR+) breast cancer	</td>
+  <td>Hot flashes, joint pain, bone density loss, cardiovascular risks	</td>
+  <td>Letrozole, Exemestane</td>
+  <td>2.5 mg orally once daily. Caution in ischemic heart disease; monitor bone mineral density	<a href="https://go.drugbank.com/drugs/DB01217">(1)</a></td>
+
+  </tr>
+  <tr>
+    <td>Tamoxifen</td>
+    <td>Selective estrogen receptor modulator (SERM)	</td>
+    <td>20 mg orally once or twice daily		</td>
+    <td>Blocks estrogen receptors on breast cancer cells, inhibiting estrogen-driven tumor growth</td>
+  <td>HR+ breast cancer, pre- and postmenopausal women		</td>
+<td>Hot flashes, risk of blood clots, endometrial cancer	</td>
+<td>Raloxifene </td>
+<td> 60 mg orally once daily (risk reduction) or Toremifene 60 mg orally once daily<a href="https://www.cancer.org/cancer/types/breast-cancer/treatment/targeted-therapy-for-breast-cancer.html">(1)</a></td>
+ </tr>
+  <tr>
+    
+    <td>Letrozole</td>
+    <td>Aromatase inhibitor	</td>
+	<td>2.5 mg orally once daily		</td>
+    <td>Inhibits aromatase enzyme, lowering estrogen levels		</td>
+	<td>HR+ breast cancer, postmenopausal women	</td>
+	<td>Hot flashes, joint pain, osteoporosis		</td>
+<td>Anastrozole <br> Exemestane 	</td>
+<td>1 mg orally once daily<br>25 mg orally once daily<a href="https://www.cancer.org/cancer/types/breast-cancer/treatment/targeted-therapy-for-breast-cancer.html">(1)</a></td></tr>
+  <tr>
+    <td>Abemaciclib (Verzenio)	</td>
+    <td>CDK4/6 inhibitor	</td>
+    <td>150-200 mg orally twice daily		</td>
+  <td>Inhibits cyclin-dependent kinases 4 and 6, blocking cell cycle progression		</td>
+  <td>HR+, HER2- advanced or early breast cancer	</td>
+<td>Diarrhea, neutropenia, fatigue, nausea	</td> 
+<td>Palbociclib <br>Ribociclib  </td> 
+<td> 125 mg orally once daily for 21 days, then 7 days off<br>600 mg orally once daily for 21 days, then 7 days off; monitor blood counts and ECG<a href="https://www.drugs.com/dosage/palbociclib.html">(2)<a href="https://www.drugs.com/dosage/ribociclib.html">(3)</a></td>
+ </tr> <tr>
+    <td>Palbociclib (Ibrance)	</td>
+    <td>CDK4/6 inhibitor	</td>
+    <td>125 mg orally once daily for 21 days, then 7 days off	</td>
+  <td>Blocks CDK4/6 to prevent cancer cell division	</td>
+  <td>HR+, HER2- advanced breast cancer		</td>
+<td>Neutropenia, infections, fatigue		</td> 
+<td>Ribociclib <br> Abemaciclib </td> 
+<td>600 mg orally once daily for 21 days, then 7 days off <br>150-200 mg orally twice daily<a href="https://www.drugs.com/dosage/ribociclib.html">(4)</a>	</td> 
+ </tr> <tr>
+    <td>Ribociclib (Kisqali)	</td>
+    <td>CDK4/6 inhibitor	</td>
+    <td>600 mg orally once daily for 21 days, then 7 days off	</td>
+  <td>Inhibits CDK4/6, halting cancer cell proliferation	</td>
+  <td>HR+, HER2- advanced or high-risk early breast cancer		</td>
+<td>Neutropenia, QT prolongation, liver enzyme elevation	</td> 
+<td>Palbociclib <br> Abemaciclib </td> 
+<td>125 mg orally once daily for 21 days, then 7 days off<br>150-200 mg orally twice daily; monitor ECG and liver function<a href="https://www.drugs.com/condition/breast-cancer.html">(5)</a></td>
+ </tr> <tr>
+    <td>Capecitabine (Xeloda)	</td>
+    <td>Chemotherapy (antimetabolite)	</td>
+    <td>1250 mg/m² orally twice daily for 14 days, then 7 days off		</td>
+  <td>Converted to 5-FU in tumor cells, inhibits DNA synthesis	</td>
+  <td>Advanced or metastatic breast cancer		</td>
+<td>Diarrhea, hand-foot syndrome, nausea	</td> 
+<td>5-Fluorouraci</td> 
+<td>250 mg/m²/day continuous IV infusion for 21 days, then 7 days off; monitor for allergic skin reactions<a href="https://www.cancer.gov/about-cancer/treatment/drugs/breast">(6)</a></td>
+ </tr>  <tr>
+    <td>Doxorubicin (Adriamycin)	</td>
+    <td>Chemotherapy (anthracycline)		</td>
+    <td>60-75 mg/m² IV every 21 days		</td>
+  <td>Intercalates DNA, inhibits topoisomerase II, causing DNA damage	</td>
+  <td>Breast cancer, often in combination regimens		</td>
+<td>Cardiotoxicity, nausea, hair loss, myelosuppression		</td> 
+<td>Epirubicin</td> 
+<td>100-120 mg/m² IV every 3-4 weeks; allergy rare but possible<a href="https://www.cancer.org/cancer/types/breast-cancer/treatment/chemotherapy-for-breast-cancer.html">(7)</a></td>
+ </tr>  <tr>
+    <td>Cyclophosphamide (Cytoxan)	</td>
+    <td>Chemotherapy (alkylating agent)	</td>
+    <td>600 mg/m² IV every 21 days or oral dosing varies	</td>
+  <td>Alkylates DNA, leading to cross-linking and apoptosis		</td>
+  <td>Breast cancer, in combination chemotherapy regimens	</td>
+<td>Nausea, immunosuppression, hemorrhagic cystitis	</td> 
+<td>Allergy possible; hydration and mesna used to prevent cystitis </td> 
+<td><a href="https://www.cancer.org/cancer/types/breast-cancer/treatment/chemotherapy-for-breast-cancer.html">(7)</a></td>
+ </tr>  <tr>
+    <td>Fulvestrant (Faslodex)	</td>
+    <td>Selective estrogen receptor degrader (SERD)		</td>
+    <td>500 mg IM on days 0, 14, 28, then monthly	</td>
+  <td>Binds and degrades estrogen receptors, blocking estrogen signaling		</td>
+  <td>HR+ advanced breast cancer		</td>
+<td>Injection site pain, nausea, hot flashes	</td> 
+<td>Aromatase <br>Letrozole </td> 
+<td>Aromatase inhibitors (Anastrozole 1 mg daily<br>2.5 mg daily); monitor for hypersensitivity<a href="https://www.drugs.com/condition/breast-cancer.html">(5)</a></td>
+ </tr>  <tr>
+    <td>Trastuzumab (Herceptin)	</td>
+    <td>HER2-targeted monoclonal antibody	</td>
+    <td>4 mg/kg IV loading dose, then 2 mg/kg weekly or 6 mg/kg every 3 weeks	</td>
+  <td>Binds HER2 receptor, inhibiting proliferation of HER2+ cancer cells		</td>
+  <td>HER2+ breast cancer	</td>
+<td>Cardiotoxicity, infusion reactions	</td> 
+<td>Ado-trastuzumab emtansine (T-DM1) </td> 
+<td>3.6 mg/kg IV every 3 weeks<a href="https://www.cancerresearchuk.org/about-cancer/breast-cancer/treatment/targeted-immunotherapy-drugs">(8)</a></td>
+ </tr>  <tr>
+    <td>Sacituzumab govitecan (Trodelvy)	</td>
+    <td>Antibody-drug conjugate (ADC)	</td>
+    <td>10 mg/kg IV on days 1 and 8 of 21-day cycle	</td>
+  <td>Targets Trop-2 protein, delivers chemotherapy directly to cancer cells	</td>
+  <td>Advanced HR+ or triple-negative breast cancer	</td>
+<td>Neutropenia, diarrhea, nausea, infusion reactions	</td> 
+<td>Monitor for severe diarrhea and infections; premedication to reduce infusion reactions</td> 
+<td><a href="https://www.drugs.com/condition/breast-cancer.html">(5)</a></td>
+ </tr>  <tr>
+    <td>Exemestane (Aromasin)	</td>
+    <td>Aromatase inhibitor	</td>
+    <td>25 mg orally once daily		</td>
+  <td>Irreversibly inhibits aromatase enzyme, lowering estrogen levels		</td>
+  <td>HR+ breast cancer, postmenopausal women	</td>
+<td>Hot flashes, joint pain, osteoporosis	</td> 
+<td>Anastrozole <br> Letrozole </td> 
+<td>1 mg orally once daily<br>2.5 mg orally once daily<a href="https://www.drugs.com/condition/breast-cancer.html">(5)</a></td>
+ </tr> 
+   </tbody>
+</table>
+
+</div>
+
+<script>
+// Dropdowns
+var dropdown = document.getElementsByClassName("dropdown-btn");
+for (var i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+// Toggle Sidebar
+var toggleBtn = document.getElementById("toggleBtn");
+var sidenav = document.getElementById("mySidenav");
+var header = document.getElementById("header");
+var mainContent = document.getElementById("mainContent");
+
+function toggleSidebar() {
+  if (sidenav.style.width === "0px") {
+    sidenav.style.width = "200px";
+    header.style.marginLeft = "200px";
+    mainContent.style.marginLeft = "200px";
+    toggleBtn.style.left = "210px";
+  } else {
+    sidenav.style.width = "0px";
+    header.style.marginLeft = "0px";
+    mainContent.style.marginLeft = "0px";
+    toggleBtn.style.left = "10px";
+  }
+}
+
+// Auto close after 3 sec
+setTimeout(function() {
+  toggleSidebar();
+}, 3000);
+
+toggleBtn.onclick = toggleSidebar;
+</script>
+
+</body>
+</html>

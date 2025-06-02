@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "Incidence of breast cancer in women in 2022"
+		
+		},
+		legend: {
+			maxWidth: 350,
+			itemWidth: 120
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			legendText: "{indexLabel}",
+			dataPoints: [
+				{ y: 985817, indexLabel: "Asia" },
+				{ y: 557532, indexLabel: "Europe" },
+				{ y: 306307, indexLabel: "America" },
+				{ y: 220124, indexLabel: "Latin America and the Caribbean"},
+				{ y: 198553, indexLabel: "Africa" },
+				{ y: 28507, indexLabel: "Oceania"},
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+<script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</body>
+</html>

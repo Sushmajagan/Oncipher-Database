@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 193px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: Black;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 80px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:l;
+  color: grey;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+div.c {
+  text-align: center;
+
+} 
+</style>
+</head>
+<body>
+
+
+<div class="header">
+ <h1><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nutrigenomics of Breast cancer</center></h1>
+
+</div>
+</body>
+</html>
+<div class="sidenav">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: white;
+  color: white;
+}
+}
+</style>
+</head>
+<body>
+<a href="./../factlens_main.html" class="previous">&laquo; Main</a></center>
+</body>
+</html> 
+   <button class="dropdown-btn">Incidence 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+     <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+       <a href="m_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+      <a href="p_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+  <a href="drug.html">Drugs</a>
+  <a href="nutri.html">Nutrigenomics</a>
+  <a href="gene.html">Genes</a>
+  <a href="poly.html">Polymorphisms</a>
+  <a href="path.html">Signalling Pathways </a> 
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+.dropbtn {
+  background-color: #007BFF; /* Bootstrap blue */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0056b3;
+}
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 70px;
+}
+
+td, th {
+
+  text-align: left;
+  padding: 9px;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+
+tr:nth-child(odd) {
+  background: linear-gradient(to bottom, #ffffcc 0%, #99ff99 100%);
+}
+
+</style>
+<body>
+<div style="text-align: right; margin: 10px 50px;">
+  <div class="dropdown">
+    <button class="dropbtn">Download <i class="fa fa-download"></i></button>
+    <div class="dropdown-content">
+      <a href="images.zip" download>Download Images</a>
+      <a href="presentation.pptx" download>Download Presentation</a>
+    </div>
+  </div>
+</div>
+
+<table align="right">
+  <tr><body>
+<div class="c"><a href="nutri_val.html"><div class="cutout">
+    <div class="island">
+        <div id="circleText">Click Here <i style="font-size:24px" class="fa">&#xf0a4;</i>&nbsp;&nbsp;Nutritional Chart </div>
+    </div>
+</div></a></div></body></b></div>
+<th width="80">    <center>Nutrigenomic Factor		</th>
+    <th width="150"><center>Gene</th>
+    <th width="200"><center>Compound</th>    
+	<th width="50"><center>Source</th>
+	<th width="50"><center>Molecular Function</th>
+	<th width="150"><center>Significance/Inference</th><th width="30"><center>Reference</th></center>
+  </tr>
+  <tr>
+    <td ><b>DNA methylation, repair	</td>
+    <td>BRCA1, BRCA2	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 200%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/foxtail.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Foxtail(Folate, Fiber, Selenium	) </b></font></div>
+  </div><br>
+</div><div class="container">
+  <img src="images/proso.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Proso(Folate, Fiber, Selenium		) </b></font></div>
+  </div>
+</div><div class="container">
+  <img src="images/pearl.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Pearl(Folate, Fiber, Selenium	) </b></font></div>
+  </div>
+</div><div class="container">
+  <img src="images/proso.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Proso(Folate, Fiber, Selenium		) </b></font></div>
+  </div>
+</div><div class="container">
+  <img src="images/little millet.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Little Millet(Folate, Fiber, Selenium	) </b></font></div>
+  </div>
+</div><div class="container">
+  <img src="images/sorghum.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Sorghum(Folate, Fiber, Selenium		) </b></font></div>
+  </div>
+</div><div class="container">
+  <img src="images/legume.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Legumes(Folate, Fiber, Selenium	) </b></font></div>
+  </div>
+</div><div class="container">
+  <img src="images/barnyard.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Barnyard(Folate, Fiber, Selenium		) </b></font></div>
+  </div>
+</div></td>
+ <td>Plant source</td>
+    <td>One-carbon metabolism, DNA methylation, DNA repair, antioxidant, anti-inflammatory	</td>
+	<td>Higher intake of fiber, folate, selenium in plant foods inversely correlates with BRCA1 methylation and BC risk	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7071273/">(1)<a href="https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1499634/full">(2)<a href="https://dutchtest.com/articles/breast-cancer-nutrigenomics-and-estrogen-detoxification">(3)</a>
+  </tr>
+  <tr>
+  <td><b>Phytoestrogen activity	</td>
+    <td>BRCA1, BRCA2, ERα/β	</td>
+      <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/soy.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Soy(Isoflavones (Genistein, Daidzein), Lignans)		</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/flax.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Flaxseed(Isoflavones (Genistein, Daidzein), Lignans)		</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/sesame.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Sesame (Isoflavones (Genistein, Daidzein), Lignans)	</b></font></div>
+  </div>
+</div><br></td>
+<td> Plant Source</td>
+  <td>Modulation of estrogen receptor signaling, gene expression, anti-proliferative, induces apoptosis	</td>
+<td>Soy and flaxseed intake associated with reduced BC risk, especially in BRCA mutation carriers	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7071273/">(1)<a href="https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1499634/full">(2)<a href="https://dutchtest.com/articles/breast-cancer-nutrigenomics-and-estrogen-detoxification">(3)</a>
+  </tr>
+  <tr>
+    <td><b>Antioxidant response	</td>
+    <td>Nrf2, NF-κB, Wnt	</td>
+    
+	 <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/green tea.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Green tea(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/kiwi.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Kiwi(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/watermelon.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Watermelon(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/hibiscus.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Hibiscus(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/brocoli.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Broccoli(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/pumpkin seed.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>pumpkin seed(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/lotus root.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>lotus root(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/curry leaf.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>curry leaf(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/betel.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>betel(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/ladys finger.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>okra(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/bitter.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>bitter gourd(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/bottle.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>bottle gourd(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/brahmi.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>brahmi(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/ivy.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>ivy gourd (Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/banana flower.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>banana flower(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/banana stem.png" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>banana stem(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/banana stem water.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>banana stem water(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/madras thorn.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>madras thorn(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/naruvili.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Assyrian plum(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/erythrina.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>erthyrina(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/ceylon.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>ceylon(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/senna.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>senna auriculata(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/kalakkai.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>carandas plum(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/neem flower.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>neem flower(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/bilimbi.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>bilimbi(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/tapi.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>tapicoa(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/cashew.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>cashew(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/sunflower.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>sunflower seed(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/sesame.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>sesame(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/pumpkin seed.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>pumpkin seed(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/velvet.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>velvet bean(Polyphenols, Flavonoids, EGCG	)</b></font></div>
+  </div>
+</div><br></td>
+<td>Plant Source</td>
+	<td>Antioxidant, anti-inflammatory, modulates cell cycle, induces apoptosis, suppresses angiogenesis		</td>
+	<td>Polyphenols and flavonoids inhibit proliferation, induce apoptosis, reduce metastasis and angiogenesis in BC cells</td>
+<td><a href="https://www.ajmb.org/Article?id=2">(3)<a href="https://www.umb.edu.pl/photo/pliki/progress-file/phs/phs_2018_1/155-161piatek.pdf">(4)</a>
+  
+  </tr>
+  <tr>
+    <td><b>Omega-3 fatty acids	 </td>
+    <td>FASN, Inflammatory genes </td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/mackrel.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Indian mackerel(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/sardines.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>sardines(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/hilsa.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>hilsa(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/salmon.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>salmon(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/pomfret.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>pomfret(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/seer.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>seer (EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/Flax.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Flaxseed(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/sunflower.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>sunflower seed(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br></td>
+<td>Plant-based and Animal-Based</td>
+  <td>Antioxidant, protects DNA, supports detoxification	</td>
+<td>Vitamin C and polyphenols lower DNA damage and support liver cell health</td>
+<td><a href="https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1499634/full">(5)<a href="https://www.mdpi.com/2218-273X/11/8/1176">(6)<a href="https://www.sciencedirect.com/science/article/pii/S2214799321000552#:~:text=Food%20is%20a%20powerful%20determinant%20in%20breast%20cancer%20development.&text=Omics%20technologies%20contribute%20to%20the%20characterization%20of%20breast%20%E2%80%93%20diet%20interaction.&text=Epigenetic%20marks%20in%20breast%20cancer%20have%20been%20related%20mostly%20to%20phytochemicals.&text=Gastrointestinal%20and%20local%20microbiota%20plays%20active%20roles%20in%20the%20estrogenic%20metabolism.">(7)</a>
+ </tr>
+  <tr>
+    <td><b>Estrogen metabolism	</td>
+    <td>CYP1A1, CYP1B1, COMT	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/brocoli.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Broccoli(Indole-3-carbinol, Sulforaphane)</b></font></div>
+  </div>
+</div><br>	</td>
+	
+<td>Plant-based</td>
+<td>Promotes detoxification of estrogen, increases 2-hydroxyestrone:16α-hydroxyestrone ratio		</td>
+<td>Cruciferous veg support estrogen detox, reduce hormone-driven BC risk	</td>
+<td><a href="https://www.mdpi.com/2218-273X/11/8/1176">(6)<a href="https://www.sciencedirect.com/science/article/pii/S2214799321000552#:~:text=Food%20is%20a%20powerful%20determinant%20in%20breast%20cancer%20development.&text=Omics%20technologies%20contribute%20to%20the%20characterization%20of%20breast%20%E2%80%93%20diet%20interaction.&text=Epigenetic%20marks%20in%20breast%20cancer%20have%20been%20related%20mostly%20to%20phytochemicals.&text=Gastrointestinal%20and%20local%20microbiota%20plays%20active%20roles%20in%20the%20estrogenic%20metabolism.">(7)</a>
+  </tr>  <tr>
+    <td><b>Glycoalkaloids (solamargine, solanine), polyphenols, glycoproteins, flavonoids, polysaccharides	</td>
+    <td>p53, BAX, Caspase-3, MMP-2, MMP-9, NF-κB, AP-1, EGFR, glycolytic enzymes (hexokinase, pyruvate kinase)	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/black.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Black Nightshade (Solanum nigrum)</b></font></div>
+  </div>
+</div><br>	</td>
+	
+<td>Plant-based</td>
+<td>Induces apoptosis via upregulation of p53, BAX, Caspase-3
+- Inhibits migration and invasion by downregulating MMP-2, MMP-9
+- Suppresses NF-κB and AP-1 signaling
+- Inhibits cell proliferation and glycolysis
+- Suppresses EGFR pathway
+- Induces oxidative stress and cell cycle arrest	</td>
+<td>1. Inhibits breast cancer cell proliferation and migration
+2. Induces apoptosis and cell cycle arrest
+3. Suppresses tumor metastasis and angiogenesis
+4. Enhances cytotoxicity of chemotherapy agents (e.g., doxorubicin)
+5. Traditionally used as an anticancer herb in Ayurveda and TCM</td>
+<td><a href="https://www.mdpi.com/2218-273X/11/8/1176">(6)<a href="https://www.sciencedirect.com/science/article/pii/S2214799321000552#:~:text=Food%20is%20a%20powerful%20determinant%20in%20breast%20cancer%20development.&text=Omics%20technologies%20contribute%20to%20the%20characterization%20of%20breast%20%E2%80%93%20diet%20interaction.&text=Epigenetic%20marks%20in%20breast%20cancer%20have%20been%20related%20mostly%20to%20phytochemicals.&text=Gastrointestinal%20and%20local%20microbiota%20plays%20active%20roles%20in%20the%20estrogenic%20metabolism.">(7)</a>
+  </tr> <tr>
+    <td><b>Lignans (phyllanthin, hypophyllanthin), polyphenols, flavonoids	 </td>
+    <td>MMP-2, MMP-9, HIF-1α, Caspase-3, apoptosis pathways	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/stone.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Stone Breaker (Phyllanthus niruri)</b></font></div>
+  </div>
+</div><br>	</td>
+	
+<td>Plant-based</td>
+<td>Inhibits matrix metalloproteinases (MMP-2, MMP-9), blocking extracellular matrix degradation and metastasis.
+<td>- Suppresses hypoxia-inducible factor (HIF-1α), reducing angiogenesis and tumor growth.
+- Induces apoptosis via caspase-3 activation, selectively cytotoxic to breast cancer cells while sparing normal cells.
+- Enhances the cytotoxic effect of doxorubicin, including in drug-resistant breast cancer cells</td>
+</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9932073/">(8)</a>
+  </tr>
+  <tr>
+    
+    <td><b>DNA repair, antioxidant	</td>
+    <td>BRCA1</td>
+    
+	<td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="images/mackrel.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Indian mackerel(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/sardines.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>sardines(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/hilsa.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>hilsa(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/salmon.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>salmon(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/pomfret.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>pomfret(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/seer.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>seer (EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/Flax.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Flaxseed(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/sunflower.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>sunflower seed(EPA, DHA, ALA)</b></font></div>
+  </div>
+</div><br>
+<div class="container">
+  <img src="images/egg.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Egg(Selenium, Vitamin D)</b></font></div>
+  </div>
+</div><br>		</td>
+<td>Plant-based and Animal-Based</td>
+<td>Upregulates DNA repair enzymes, supports cell cycle arrest, induces apoptosis	</td>
+<td>Selenium and vitamin D intake support DNA repair, may reduce BC risk, especially in BRCA mutation carriers	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7071273/">(1)<a href="https://www.mdpi.com/2218-273X/11/8/1176">(6)<a href="https://www.sciencedirect.com/science/article/pii/S2214799321000552#:~:text=Food%20is%20a%20powerful%20determinant%20in%20breast%20cancer%20development.&text=Omics%20technologies%20contribute%20to%20the%20characterization%20of%20breast%20%E2%80%93%20diet%20interaction.&text=Epigenetic%20marks%20in%20breast%20cancer%20have%20been%20related%20mostly%20to%20phytochemicals.&text=Gastrointestinal%20and%20local%20microbiota%20plays%20active%20roles%20in%20the%20estrogenic%20metabolism.">(7)</a>
+ </tr>
+  <tr>
+    <td><b>Hormone regulation	</td>
+    <td>CYP19A1, ESR1, ESR2	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/pumpkin seed.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Pumpkin seed(Zinc, Magnesium, Fiber)</b></font></div>
+  </div></div><br><br>
+  
+ <div class="container">
+  <img src="images/sesame.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>sesame(Zinc, Magnesium, Fiber)</b></font></div>
+  </div></div><br><div class="container">
+  <img src="images/banana stem.png" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>banana stem(Zinc, Magnesium, Fiber)</b></font></div>
+  </div></div><br><div class="container">
+  <img src="images/banana flower.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>banana flower(Zinc, Magnesium, Fiber)</b></font></div>
+  </div></div><br></td>
+   <td>Plant-Based</td>
+	<td>Cofactors for hormone synthesis, support hormone detox, bind estrogen in gut	</td>
+ <td>Seeds and legumes support hormone balance, fiber aids estrogen elimination, reducing BC risk</td>
+<td><a href="https://www.mdpi.com/2218-273X/11/8/1176">(6)<a href="https://www.sciencedirect.com/science/article/pii/S2214799321000552#:~:text=Food%20is%20a%20powerful%20determinant%20in%20breast%20cancer%20development.&text=Omics%20technologies%20contribute%20to%20the%20characterization%20of%20breast%20%E2%80%93%20diet%20interaction.&text=Epigenetic%20marks%20in%20breast%20cancer%20have%20been%20related%20mostly%20to%20phytochemicals.&text=Gastrointestinal%20and%20local%20microbiota%20plays%20active%20roles%20in%20the%20estrogenic%20metabolism.">(7)</a> </tr>
+</td></tr>
+       </table>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
+

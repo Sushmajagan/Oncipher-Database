@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>breast Cancer Pathways</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 220px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+      padding-top: 20px;
+      overflow-y: auto;
+    }
+
+    .sidenav a, .dropdown-btn {
+      padding: 10px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+      display: block;
+      background: none;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .sidenav a:hover, .dropdown-btn:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-container {
+      display: none;
+      background-color: white;
+      padding-left: 16px;
+    }
+
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+
+    .main {
+      margin-left: 240px;
+      padding: 20px;
+      position: relative;
+    }
+
+    .content-box {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    video {
+      width: 100%;
+      max-width: 640px;
+      margin-bottom: 20px;
+    }
+
+    /* Header + Download */
+    .header-row {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title {
+      background-color: #1abc9c;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      flex: 1;
+      text-align: center;
+      margin-right: 20px;
+    }
+
+    .download-container {
+      position: relative;
+    }
+
+    .dropbtn {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 14px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover {
+      background-color: #0056b3;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      font-size: 12px;
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Side Navigation -->
+<div class="sidenav">
+  <a href="./../factlens_main.html">&laquo; Main</a>
+  <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+
+    <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+
+    <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+  
+    <a href="in_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+  <a href="drug.html">Drugs</a>
+  <a href="nutri.html">Nutrigenomics</a>
+  <a href="gene.html">Genes</a>
+  <a href="poly.html">Polymorphisms</a>
+  <a href="path.html">Signalling Pathways</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+  <!-- Header and Download -->
+  <div class="header-row">
+    <div class="header-title">Signalling Pathway of Breast cancer</div>
+    <div class="download-container">
+      <div class="dropdown">
+        <button class="dropbtn">Download <i class="fa fa-download"></i></button>
+        <div class="dropdown-content">
+          <a onclick="autoDownload('pathway.png')">Download Image</a>
+          <a onclick="autoDownload('pathway.mp4')">Download Video</a>
+          <a onclick="autoDownload('pathway.pptx')">Download Presentation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video and Text -->
+  <div class="content-box">
+    <video controls>
+      <source src="pathway.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+  <p><b>Key Signaling Pathways in Breast cancer</b></p>
+  <p>Breast cancer progression is driven by dysregulation of core oncogenic pathways, modulatory networks, and subtype-specific signaling cascades. </p>
+  <p><b>1. HER2/ERBB2 Signaling</b></p>
+  <p><b>Activation:</b> ERBB2 amplification (15–20% of cases) drives ligand-independent dimerization, activating downstream effectors</p>
+  <p><b>Functional impact:</b> Sustains proliferation via MAPK/ERK and PI3K/AKT.</p>
+  <p>Promotes metastasis through MMP-9/IL-6 secretion
+  <p>HER2-low tumors exhibit mixed basal-luminal features with elevated AR and CLDN8
+  <p><b>2. Estrogen Receptor (ER) Pathway</b> 
+  <p><b>Mechanism:</b>
+  <p>Ligand-dependent ERα activation regulates transcription of CCND1 and MYC.
+   <p><b>Resistance drivers:</b></p>
+  <p>ESR1 mutations (30% of metastatic cases) and crosstalk with CDK4/6</p>
+ <p><b>3. PI3K/AKT/mTOR Axis</b>  
+  <p><b>Genetic alterations:</b> PIK3CA mutations (40%) and PTEN loss (35%)
+   <p><b>Oncogenic effects:</b>AKT phosphorylates BAD/FOXO1, inhibiting apoptosis.
+ <p>mTORC1 enhances HIF1α-mediated angiogenesis</p>
+  <p><b>4. Wnt/β-Catenin Signaling</b>  
+  <p><b>Activation: </b> CTNNB1 mutations or DKK1/FRP1 silencing in 30–40% of tumors
+   <p><b>Role:</b>Sustains BCSC self-renewal via LGR5 and promotes EMT through TWIST1
+  <p><b>5. p53 Pathway</b>  
+  <p><b>Alterations:</b> Mutations in 20% of tumors; broader dysregulation in 60% via MDM2/MDM4
+   <p><b>Impact:</b>Loss of DNA repair capacity and apoptosis evasion
+   <p><b>Modulatory Signaling Networks</b>
+   <p><b>TGF-β/SMAD Pathway</b>
+   <p><b>Dual role:</b>Tumor-suppressive early; pro-metastatic late via SMAD2/3-mediated EMT and immunosuppressive TME
+   <p><b>NF-κB Signaling</b>
+    <p><b>Activators:</b>Inflammatory cytokines (IL-6, TNF-α) and RTK crosstalk
+   <p><b>Effects: </b>Upregulates BCL2 and COX-2, linking inflammation to therapy resistance
+<p><b>Hedgehog (Hh) Signaling</b>
+    <p><b>Components: </b>SMO mutations and GLI1/2 overexpression in BCSCs
+   <p><b>Function:  </b>Maintains stemness via BMI1 and induces chemo-resistance through ABCG2/MGMT
+<p><b>JAK/STAT3 Axis</b>
+    <p><b>Activation:</b>IL-6/gp130 signaling in TNBC.
+   <p><b>Outcome:</b>MYC stabilization and PD-L1 upregulation for immune evasion
+  <b>Source:</b>
+    <a href="https://www.mdpi.com/2073-4425/15/7/903">(1)</a>
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4058311/">(2)</a>
+    <a href="https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2023.1221175/full">(3)</a>
+    <a href="https://ascopubs.org/doi/10.14694/EdBook_AM.2015.35.e31">(4)</a>
+    <a href="https://www.nature.com/articles/s41523-025-00723-0">(5)</a>
+   </p></div>
+<script>
+  function autoDownload(fileName) {
+    const a = document.createElement('a');
+    a.href = fileName;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
+  // Toggle dropdowns in side navigation
+  const dropdowns = document.getElementsByClassName("dropdown-btn");
+  for (let i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+  }
+</script>
+
+</body>
+</html>

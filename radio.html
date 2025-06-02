@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="previous">&laquo; Previous</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:row;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* Responsive for the div class of the image and the text */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #FFEEDD;
+}
+.textbox-1 {
+  font-size: 1.25em;
+  text-align: justify;
+}
+.row {
+  display: flex;
+  justify-content:space-around;
+  padding:25px 0 ;
+  max-width:1280px;
+  margin:auto;
+  
+}
+.flex {
+  flex: 0 0 45%;
+  background:#ccc;
+}
+.flex p{
+  margin:0;
+  padding:10px;
+}
+.object-fit{
+  overflow:hidden;
+  position:relative;
+}
+.object-fit img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  height:auto;
+  width:auto;
+  min-width:50%;
+  min-height:50%;
+  transform:translate(-50%, -50%);
+}
+@supports (object-fit: cover) {
+  .object-fit img  {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    transform: none;
+    object-fit: cover;
+  }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1abc9c;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:row;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* Responsive for the div class of the image and the text */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #FFEEDD;
+}
+.textbox-1 {
+  font-size: 1.25em;
+  text-align: justify;
+}
+.row {
+  display: flex;
+  justify-content:space-around;
+  padding:25px 0 ;
+  max-width:1280px;
+  margin:auto;
+  
+}
+.flex {
+  flex: 0 0 45%;
+  background:#ccc;
+}
+.flex p{
+  margin:0;
+  padding:10px;
+}
+.object-fit{
+  overflow:hidden;
+  position:relative;
+}
+.object-fit img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  height:auto;
+  width:auto;
+  min-width:50%;
+  min-height:50%;
+  transform:translate(-50%, -50%);
+}
+@supports (object-fit: cover) {
+  .object-fit img  {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    transform: none;
+    object-fit: cover;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Treatment</h2>
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+       <li><a href="surgery.html">Surgery</a></li>
+      <li><a href="chemo.html">Chemotherapy</a></li>
+      <li><a href="radio.html">Radiotherapy</a></li>
+	  <li><a href="hormone.html">Hormone Therapy</a></li>
+	  <li><a href="target.html">Targeted Therapy</a></li>
+	  <li><a href="immuno.html">Immunotherapy</a></li>
+	  
+    </ul>
+  </nav>
+  
+  <article><img src="radiation.png" align="right" alt="broken image" width="35%">
+    <h1>Radiotherapy</h1>
+	<p>Radiotherapy, or radiation therapy, is a crucial component in the treatment of breast cancer, primarily aimed at destroying remaining cancer cells after surgery and reducing the risk of recurrence. It utilizes high-energy rays, such as X-rays or protons, to target and kill cancer cells while sparing surrounding healthy tissue.
+</p>
+<p><b>Radiotherapy is typically recommended in the following scenarios:</b></p>
+<p><b>1.Post-Surgery Treatment:</b></p>
+<ul><li>After breast-conserving surgery (lumpectomy), radiotherapy is standard to eliminate residual cancer cells and significantly reduce the risk of local recurrence by 50-60% 14.
+Following a mastectomy, especially if there are positive lymph nodes or close surgical margins, radiotherapy can improve overall survival rates.
+<p><b>2.Neoadjuvant Therapy:</b></p>
+In some cases, radiotherapy may be administered after neoadjuvant systemic therapy (NST) to further decrease recurrence risk.
+<p><b>3.Palliative Care:</b></p>
+For advanced breast cancer that has metastasized to other areas of the body, radiotherapy can help alleviate symptoms and control disease progression.
+<p><b>Types of Radiotherapy</b></p>
+<p><b>1.External Beam Radiation Therapy (EBRT):</b></p>
+The most common form, where radiation is delivered from a machine to the entire breast or specific areas.
+<p><b>Whole Breast Irradiation (WBI):</b></p> Typically administered over 5-6 weeks, with recent studies supporting shorter courses (about 3 weeks) that are equally effective.
+<p><b>Partial Breast Irradiation (PBI):</b></p> Targets only the tumor bed and surrounding tissues, which may be suitable for select early-stage patients.
+<p><b>2.Brachytherapy:</b></p>
+Involves placing radioactive sources directly into or near the tumor site. This method can deliver higher doses of radiation to a localized area while minimizing exposure to surrounding healthy tissue.
+<p><b>3.Hypofractionated Radiation Therapy:</b></p>
+Delivers larger doses of radiation over fewer sessions (typically 3-4 weeks), showing similar effectiveness to conventional schedules while potentially reducing side effects 45.
+<p><b>Planning and Administration</b></p>
+<p><b>Before starting radiotherapy, a detailed planning process is conducted:</b></p>
+<p><b>Treatment Planning:</b></p> Involves imaging studies to determine the precise area needing treatment and calculating the appropriate radiation dose.
+<p><b>Timing:</b></p> Radiotherapy usually begins about 4-8 weeks post-surgery to allow for healing
+ <a href="https://www.cancer.org/cancer/types/breast-cancer/treatment.html">Source</a> </article>
+</section>
+<body>
+<div>
+<div class="row">
+  <div class="flex textbox-1">
+ <p class="small"> 
+ <pre>	In radiotherapy, the blue, green, and orange lines 
+	typically represent different isodose lines or treatment volumes 
+	that are critical for planning and delivering radiation therapy effectively. 
+	Blue Line:Often represents the minimum dose line or the area where a specific 
+	percentage of the prescribed dose is delivered.
+	Green Line:This line usually indicates the clinical target volume (CTV) 
+	or a higher dose line, which encompasses the area that includes the tumor and 
+	a margin of surrounding tissue that may contain microscopic disease. 
+	Anatomic position of the breast target volume (left picture)shows the 
+	tumor before the radiation(right image) shows the post-radiation.</p>
+	
+
+  </div>
+  <img src="radio.png" style="width:750px;height:350px;">
+  
+</div></div>
+</body>
+</html>
+

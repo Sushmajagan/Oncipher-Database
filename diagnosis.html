@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+</style>
+</head>
+<body>
+
+<a href="index.html" class="previous">&laquo; Previous</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1abc9c;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: -3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+	
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Diagnosis</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+     <li><a href="mammogram.html">Mammography</a></li>
+      <li><a href="ultrasound.html">Ultrasound</a></li>
+      <li><a href="mri.html">Magnetic Resonance Imaging (MRI)</a></li>
+	  <li><a href="biopsy.html">Biopsy</a></li>
+	  
+    </ul>
+  </nav>
+  
+  <article>
+   <p>Breast cancer diagnosis involves a combination of clinical examinations, imaging tests, and biopsies to confirm the presence of cancerous cells. Here’s an overview of the current methods used for diagnosing breast cancer.	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a></p>
+<pre>
+<p style ="font-family:arial;"><b>Clinical Examination</b>
+
+<b>Breast Examination: </b>A healthcare professional assesses the breasts for any lumps or abnormalities.
+
+<b>Imaging Tests</b>
+
+<b>1.Mammography:</b>
+ A low-dose X-ray specifically for breast tissue.
+
+<b>*Advantages:</b> Cost-effective and widely used for screening.
+<b>*Limitations:</b> Less effective in women with dense breasts, leading to higher false-positive rates in younger women.	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a>
+
+<b>2.Ultrasound:</b>
+ Uses sound waves to create images of breast tissues.
+
+<b>*Advantages:</b> Real-time imaging and cost-effective.
+<b>*Limitations:</b> Cannot detect microcalcifications, which may indicate early cancer.	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a>
+
+<b>3.Magnetic Resonance Imaging (MRI):</b>
+ Utilizes a magnetic field and radio waves for detailed breast images.
+
+<b>*Advantages:</b> Particularly beneficial for evaluating tumors not visible on mammograms or in dense breast tissue.
+<b>*Limitations:</b> Can overestimate tumor size due to surrounding abnormal tissue.	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a>
+
+<b>4.Positron Emission Tomography-Computed Tomography (PET-CT):</b>
+ Combines metabolic imaging with anatomical imaging.
+
+<b>*Advantages: </b>Non-invasive and provides detailed images.
+<b>*Limitations:</b> High cost and less effective for small tumors.	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a>
+
+<b>5.Breast Specific Gamma Imaging (BSGI):</b>
+ A nuclear medicine test that uses a radiotracer to visualize breast tissues.
+
+<b>*Advantages:</b> Effective for detecting small lesions, unaffected by breast density.
+<b>*Limitations:</b> High radiation dose, not suitable for routine screening.	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a>
+
+<b>Biopsy Procedures</b>
+	The definitive diagnosis of breast cancer is made through biopsy, which involves removing tissue samples for laboratory analysis.
+
+	<b>1.Fine Needle Aspiration Cytology (FNAC):</b>
+			A thin needle is used to withdraw cells from a suspicious area for quick analysis.
+
+	<b>2.Core Needle Biopsy (CNB):</b>
+		A larger needle extracts a core of tissue, providing more comprehensive samples than FNAC.
+
+	<b>3.Sentinel Lymph Node Biopsy (SLNB):</b>
+		This procedure determines if cancer has spread to lymph nodes, guiding treatment decisions</font></pre>
+		<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a>
+
+  </article>
+</section>
+
+</body>
+</html>
+

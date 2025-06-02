@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="previous">&laquo; Previous</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:row;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* Responsive for the div class of the image and the text */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #FFEEDD;
+}
+.textbox-1 {
+  font-size: 1.25em;
+  text-align: justify;
+}
+.row {
+  display: flex;
+  justify-content:space-around;
+  padding:25px 0 ;
+  max-width:1280px;
+  margin:auto;
+  
+}
+.flex {
+  flex: 0 0 45%;
+  background:#ccc;
+}
+.flex p{
+  margin:0;
+  padding:10px;
+}
+.object-fit{
+  overflow:hidden;
+  position:relative;
+}
+.object-fit img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  height:auto;
+  width:auto;
+  min-width:50%;
+  min-height:50%;
+  transform:translate(-50%, -50%);
+}
+@supports (object-fit: cover) {
+  .object-fit img  {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    transform: none;
+    object-fit: cover;
+  }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1abc9c;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:row;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* Responsive for the div class of the image and the text */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #FFEEDD;
+}
+.textbox-1 {
+  font-size: 1.25em;
+  text-align: justify;
+}
+.row {
+  display: flex;
+  justify-content:space-around;
+  padding:25px 0 ;
+  max-width:1280px;
+  margin:auto;
+  
+}
+.flex {
+  flex: 0 0 45%;
+  background:#ccc;
+}
+.flex p{
+  margin:0;
+  padding:10px;
+}
+.object-fit{
+  overflow:hidden;
+  position:relative;
+}
+.object-fit img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  height:auto;
+  width:auto;
+  min-width:50%;
+  min-height:50%;
+  transform:translate(-50%, -50%);
+}
+@supports (object-fit: cover) {
+  .object-fit img  {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    transform: none;
+    object-fit: cover;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Diagnosis</h2><img src="mammogram.png" align="right" alt="broken image" width="30%">
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="mammogram.html">Mammography</a></li>
+      <li><a href="ultrasound.html">Ultrasound</a></li>
+      <li><a href="mri.html">Magnetic Resonance Imaging (MRI)</a></li>
+	  <li><a href="biopsy.html">Biopsy</a></li>
+	  
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Mammography</h1>
+	<p>A mammogram is a picture of the inside of the breast. Mammography may find tumors that are too small to feel. It may also find ductal carcinoma in situ (DCIS). In DCIS, abnormal cells line the breast duct, and in some women may become invasive cancer.</p>
+    
+	<p>There are different types of mammograms:
+
+<ul><li><b>Film mammography</b> is an x-ray picture of the breast.</li>
+<li><b>Digital mammography (DM)</b> is a computer picture of the breast.</li>
+</li><b>Digital breast tomosynthesis (DBT)</b> uses x-rays to take a series of pictures of the breast from many different angles. A computer is used to make 3-D pictures of the breast from these x-rays.</li>
+<li><b>2-dimensional mammography (S2D)</b> uses x-rays to take pictures of the inside of the breast, usually from two different angles. A computer or x-ray film is used to make 2-D pictures of the breast.<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a> </li>
+
+<p>Digital breast tomosynthesis (DBT) was approved by the U.S. Food and Drug Administration (FDA) in 2018 and is now used in 3 out of 4 facilities. One recent study found that 2-dimensional mammography (S2D) combined with DBT improved tumor detection rates and lowered mammogram callbacks, radiation dose, and overall costs. More studies are being done to compare different types of breast cancer screening.<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a> 
+
+Many factors affect whether mammography is able to detect (find) breast cancer:
+
+<ul><li>The age and weight of the patient.</li>
+
+<li>The size and type of tumor.</li>
+
+<li>Where the tumor has formed in the breast.</li>
+
+<li>How sensitive the breast tissue is to hormones.</li>
+
+<li>How dense the breast tissue is.</li>
+
+<li>The timing of the mammography within the woman's menstrual cycle.</li>
+
+<li>The quality of the mammogram picture.</li>
+
+<li>The skill of the radiologist in reading the mammogram.<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a> </li>
+
+
+<p>Women aged 50 to 69 years who have screening mammograms have a lower chance of dying from breast cancer than women who do not have screening mammograms.</p>
+
+<p>Mammography is less likely to find breast tumors in women with dense breast tissue. Because both tumors and dense breast tissue appear white on a mammogram, it can be harder to find a tumor when there is dense breast tissue. Younger women are more likely to have dense breast tissue.</p>
+ 	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a> </article>
+</section>
+<body>
+<div>
+<div class="row">
+  <div class="flex textbox-1">
+    <p> On a mammogram:
+Dense breast tissue appears white, while fatty tissue shows up as dark gray.
+Tumors typically appear as white patches against the darker background of normal breast tissue. 
+The edges of these tumors can provide clues about their nature-sharp edges may suggest benignity, while irregular or spiculated edges suggest malignancyMammographic tumour appearances. 
+Spiculated mass in the right breast of 79-year-old woman, fat involuted breast.All images acquired in the craniocaudal projection.<a href="https://www.nature.com/articles/s41598-020-77053-7">Source</a></p>
+  </div>
+  <div class="flex object-fit"><a href="mammogram_full_image.html"> <img src="mammogram_image.png" alt="broken image" width="50%"> </a></div>
+</div></div>
+</body>
+</html>
