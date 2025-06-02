@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biomarker of Breast Cancer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+/* Sidebar */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+.active {
+  color: grey;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Toggle Button */
+#toggleBtn {
+  position: fixed;
+  top: 3px;
+  left: 210px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 3;
+  transition: left 0.5s;
+}
+
+/* Header */
+.header {
+  padding: 23px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  margin-left: 200px;
+  transition: margin-left 0.5s;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+  transition: margin-left 0.5s;
+}
+
+/* Table Styling */
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid #cce5ff;
+  text-align: left;
+  padding: 9px;
+}
+
+tr:nth-child(odd) {
+  background: linear-gradient(to bottom, #ff9966 0%, #ff99cc 100%);
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidenav" id="mySidenav">
+  <a href="./../factlens_main.html">&laquo; Main</a>
+  <button class="dropdown-btn">Incidence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+      <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+      <a href="m_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="p_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+  <a href="drug.html">Drugs</a>
+  <a href="nutri.html">Nutrigenomics</a>
+  <a href="gene.html">Genes</a>
+  <a href="poly.html">Polymorphisms</a>
+    <a href="path.html">Signalling Pathway</a>
+  </div>
+</div>
+
+<button id="toggleBtn"> Menu</button>
+
+<div class="header" id="header">
+  <h1>Biomarker of Breast Cancer</h1>
+</div>
+
+<div class="main-content" id="mainContent">
+
+<!-- biomarker Table -->
+<table>
+<thead>
+  <tr>
+    <th width="160">Biomarker	</th>
+    <th width="180">Normal Measure	</th>
+    <th width="180">Abnormal Measure	</th>
+	<th width="320">Clinical Significance</th>
+	<th width="200">Reference</th>
+	
+  </tr>
+  <tr>
+    <td >Estrogen Receptor (ER)	</td>
+    <td><1% tumor cells positive by IHC	</td>
+    <td>≥1% tumor cells positive by IHC	</td>
+	<td>Positive ER indicates hormone receptor–positive breast cancer; predicts response to endocrine therapy (e.g., tamoxifen, aromatase inhibitors) and better prognosis	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10819101/">(1)</a><a href="https://www.nature.com/articles/s43856-021-00013-3">(2)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)</a> </tr>
+  <tr>
+    <td>Progesterone Receptor (PR)	</td>
+     <td><1% tumor cells positive by IHC	</td>
+    <td>>≥1% tumor cells positive by IHC	</td>
+ <td>PR positivity often accompanies ER positivity; indicates hormone responsiveness and better prognosis	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10819101/">(1)<a href="https://www.nature.com/articles/s43856-021-00013-3">(2)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)</a> </tr>
+
+  </tr>
+  <tr>
+    <td>Ki-67 (Proliferation Index)	</td>
+   <td>	Low level, typically <14% positive cells	</td>
+    <td>High level, typically ≥14% positive cells		</td>
+	<td>High Ki-67 indicates high tumor proliferation, worse prognosis, and may guide chemotherapy decisions, especially in Luminal B subtype</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10819101/">(1)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://jpionline.org/article/32383/">(4)</a> </tr>
+  </tr>
+  <tr>
+    <td>CA 15-3 (Cancer Antigen 15-3)	</td>
+    <td><30 U/mL (varies by assay)	</td>
+    <td>Elevated (>30 U/mL)	</td>
+  <td>Used for monitoring treatment response and disease progression in advanced breast cancer; not diagnostic alone</td>
+	<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7881406/">(1)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://www.ncbi.nlm.nih.gov/books/NBK597378/table/article-145903.table1/?report=objectonly">(5)</a>
+  </tr>
+  <tr>
+    <td>CA 27.29	</td>
+    <td><38 U/mL (varies by assay)	 </td>
+    <td>Elevated (>38 U/mL)		</td>
+	<td>Similar to CA 15-3, used for monitoring metastatic breast cancer and treatment response</td>
+<td><a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://www.ncbi.nlm.nih.gov/books/NBK597378/table/article-145903.table1/?report=objectonly">(5)</a></td>  </tr>
+  <tr>
+    <td>Carcinoembryonic Antigen (CEA)	</td>
+    <td><5 ng/mL (varies)	</td>
+    <td>Elevated (>5 ng/mL)	</td>
+	<td>May indicate tumor activity or metastasis; less specific, can be elevated in benign conditions</td>
+	<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7881406/">(1)<a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://www.ncbi.nlm.nih.gov/books/NBK597378/table/article-145903.table1/?report=objectonly">(5)</a>
+  </tr><tr>
+    <td>Bcl-2</td>
+    <td>Normal expression in cells	</td>
+    <td>Overexpression or underexpression	</td>
+	<td>Anti-apoptotic protein; expression patterns correlate with tumor subtype and prognosis</td>
+   	<td><a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)</a></td>
+  </tr><tr>
+    <td>p53</td>
+    <td>Wild-type expression	</td>
+    <td>Mutations or overexpression	</td>
+	<td>Tumor suppressor gene; mutations associated with aggressive tumors and poor prognosis</td>
+   	<td><a href="https://journals.viamedica.pl/nowotwory_journal_of_oncology/article/view/95605">(3)<a href="https://www.nature.com/articles/s41392-024-01823-2">(6)</a></td>
+  </tr>
+        </tbody>
+</table>
+
+</div>
+
+<script>
+// Dropdowns
+var dropdown = document.getElementsByClassName("dropdown-btn");
+for (var i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+// Toggle Sidebar
+var toggleBtn = document.getElementById("toggleBtn");
+var sidenav = document.getElementById("mySidenav");
+var header = document.getElementById("header");
+var mainContent = document.getElementById("mainContent");
+
+function toggleSidebar() {
+  if (sidenav.style.width === "0px") {
+    sidenav.style.width = "200px";
+    header.style.marginLeft = "200px";
+    mainContent.style.marginLeft = "200px";
+    toggleBtn.style.left = "210px";
+  } else {
+    sidenav.style.width = "0px";
+    header.style.marginLeft = "0px";
+    mainContent.style.marginLeft = "0px";
+    toggleBtn.style.left = "10px";
+  }
+}
+
+// Auto close after 3 sec
+setTimeout(function() {
+  toggleSidebar();
+}, 3000);
+
+toggleBtn.onclick = toggleSidebar;
+</script>
+
+</body>
+</html>
+

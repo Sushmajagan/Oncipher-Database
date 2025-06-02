@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="previous">&laquo; Previous</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1abc9c;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Diagnosis</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+     <li><a href="mammogram.html">Mammography</a></li>
+      <li><a href="ultrasound.html">Ultrasound</a></li>
+      <li><a href="mri.html">Magnetic Resonance Imaging (MRI)</a></li>
+	  <li><a href="biopsy.html">Biopsy</a></li>
+	  
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Biopsy</h1>
+    <p>A biopsy is the definitive method for diagnosing breast cancer. It involves removing tissue or fluid from the breast to be examined under a microscope. There are several types of biopsies:
+<ul><li><b>Fine-Needle Aspiration:</b> A thin needle is used to extract cells.</li>
+<li><b>Core Biopsy: </b>A larger needle removes a core sample of tissue.</li>
+<li><b>Open Biopsy:</b> A surgical procedure to remove a larger area of tissue</li></p>	<a href="https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection.html">Source</a>
+  </article>
+</section>
+<body>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column"><center><h3>Fine-Needle Aspiration</h3></center>
+    <img src="fine.png" alt="Fine-Needle Aspiration" style="width:100%">
+  </div>
+  <div class="column"><center><h3> Core Biopsy</h3></center>
+    <img src="core.png" alt="core" style="width:100%">
+  </div>
+  <div class="column"><center><h3>Biopsy</h3></center>
+    <img src="incisional.png" alt="incisional" style="width:110%">
+  </div>
+</div>
+</style>
+</body>
+</html>
+
