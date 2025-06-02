@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 193px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: Black;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-left: 80px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:l;
+  color: grey;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+div.c {
+  text-align: center;
+
+} 
+</style>
+</head>
+<body>
+
+
+<div class="header">
+ <h1><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nutrigenomics of Bladder cancer</center></h1>
+
+</div>
+</body>
+</html>
+<div class="sidenav">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: white;
+  color: white;
+}
+}
+</style>
+</head>
+<body>
+<a href="./../factlens_main.html" class="previous">&laquo; Main</a></center>
+</body>
+</html> 
+   <button class="dropdown-btn">Incidence 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+ <a href="in_both.html">Both Sexes</a>
+    <a href="in_male.html">Males</a>
+    <a href="in_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Mortality <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="m_both.html">Both Sexes</a>
+    <a href="m_male.html">Males</a>
+    <a href="m_female.html">Females</a>
+  </div>
+  <button class="dropdown-btn">Prevalence <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="p_both.html">Both Sexes</a>
+    <a href="p_male.html">Males</a>
+    <a href="p_female.html">Females</a>
+  </div>
+  <a href="diagnosis.html">Diagnosis</a>
+  <button class="dropdown-btn">Biomarkers <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="biomarker.html">Biomarker</a>
+    <a href="cyto.html">Cytogenetics</a>
+    <a href="pharm.html">Pharmacogenomics</a>
+  </div>
+  <a href="treatment.html">Treatment</a>
+  <a href="drug.html">Drugs</a>
+  <a href="nutri.html">Nutrigenomics</a>
+  <a href="gene.html">Genes</a>
+  <a href="poly.html">Polymorphisms</a>
+  <a href="path.html">Signalling Pathways </a> 
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+.dropbtn {
+  background-color: #007BFF; /* Bootstrap blue */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0056b3;
+}
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 70px;
+}
+
+td, th {
+
+  text-align: left;
+  padding: 9px;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+
+tr:nth-child(odd) {
+  background: linear-gradient(to bottom, #ffffcc 0%, #99ff99 100%);
+}
+
+</style>
+<body>
+<div style="text-align: right; margin: 10px 50px;">
+  <div class="dropdown">
+    <button class="dropbtn">Download <i class="fa fa-download"></i></button>
+    <div class="dropdown-content">
+      <a href="images.zip" download>Download Images</a>
+      <a href="presentation.pptx" download>Download Presentation</a>
+    </div>
+  </div>
+</div>
+
+<table align="right">
+  <tr><body>
+<div class="c"><a href="nutri_val.html"><div class="cutout">
+    <div class="island">
+        <div id="circleText">Click Here <i style="font-size:24px" class="fa">&#xf0a4;</i>&nbsp;&nbsp;Nutritional Chart </div>
+    </div>
+</div></a></div></body></b></div>
+<th width="80">    <center>Nutrigenomic Factor		</th>
+    <th width="150"><center>Gene</th>
+    <th width="200"><center>Compound</th>    
+	<th width="60"><center>Source</th>
+	<th width="150"><center>Molecular Function</th>
+	<th width="150"><center>Significance/Inference</th>
+	<th width="30"><center>Reference</th></center>
+  </tr>
+  <tr>
+    <td>Betalains, polyphenols, vitamin C<b></td>
+    <td>Nrf2, p53, NF-κB</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 200%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/cactus.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Cactus fruit (prickly pear)</b></font></div>
+  </div>
+</div><br></td>
+ <td>Plant source</td>
+    <td>Antioxidant, anti-inflammatory, induces apoptosis	</td>
+	<td>May reduce oxidative stress, inhibit cancer cell growth</td>
+<td><a href="https://www.medicalnewstoday.com/articles/bladder-cancer-diet">(1)</a>
+  </tr>
+  <tr>
+  <td><b>Polyphenols, flavonoids, fiber	</td>
+    <td>Nrf2, p53, NF-κB	</td>
+      <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/fig.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Fig	</b></font></div>
+  </div>
+</div><br>
+</div><br></td>
+<td> Plant-based Source</td>
+  <td>Antioxidant, modulates detoxification enzymes	</td>
+<td>May protect DNA, support detoxification</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+  </tr>
+  <tr>
+    <td><b>Resistant starch, fiber	</td>
+    <td>Data not established</td>
+    
+	 <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/tapi.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Tapioca	</b></font></div>
+  </div>
+</div><br></td>
+<td>Plant Source</td>
+	<td>Supports gut microbiome, immune modulation	</td>
+	<td>May support gut health; direct evidence limited</td>
+<td><a href="https://4basecare.com/what-foods-prevent-cancer/2">(3)</a>
+  
+  </tr>
+  <tr>
+    <td><b>Vitamin C, lycopene, polyphenols	 </td>
+    <td>Nrf2, p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/guava.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Guava	 </b></font></div>
+  </div>
+</div><br><</td>
+<td>Plant-based</td>
+  <td>Antioxidant, anti-inflammatory	</td>
+<td>Aflatoxin risk in GSTM1 null genotype; polyphenols protective	</td>
+<td><a href="https://www.medicalnewstoday.com/articles/bladder-cancer-diet">(1)</a>
+ </tr>
+  <tr>
+    <td><b>Ellagitannins, punicalagin	</td>
+    <td>Nrf2, p53, NF-κB, MAPK	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/pomegranate.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Pomegranate	</b></font></div>
+  </div>
+</div><br></td>
+	
+<td>Plant-based</td>
+<td>Antioxidant, induces apoptosis, inhibits proliferation	</td>
+<td>May inhibit bladder cancer cell growth and progression</td>
+<td><a href="https://www.medicalnewstoday.com/articles/bladder-cancer-diet">(1)</a>
+  </tr>
+  <tr>
+    
+    <td><b>Vitamin C, flavonoids, limonene</td>
+    <td>Nrf2, p53, NF-κB</td>
+    
+	<td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/lemon.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Lemon</b></font></div>
+  </div>
+</div><br>	</td>
+<td>Plant-based</td>
+<td>Antioxidant, modulates detoxification enzymes	</td>
+<td>May reduce oxidative stress, support DNA repair</td>
+<td><a href="https://www.medicalnewstoday.com/articles/bladder-cancer-diet">(1)</a>
+ </tr>
+  <tr>
+    <td><b>Polyphenols, carotenoids, fiber	</td>
+    <td>Nrf2, p53	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/pasala keerai.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Malabar spinach</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, anti-inflammatory	</td>
+ <td>May protect DNA, support detoxification	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    
+    <td><b>Isothiocyanates, quercetin</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    
+	<td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/moringa.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Moringa	</b></font></div>
+  </div>
+</div><br>	</td>
+<td>Plant-based</td>
+<td>Antioxidant, induces apoptosis, inhibits inflammation	</td>
+<td>May inhibit cancer cell growth</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr>
+  <tr>
+    <td><b>Polyphenols, betalains, fiber	</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/arai.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Spleen amaranth	</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, anti-inflammatory	</td>
+ <td>May reduce oxidative stress, support immune function</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    
+    <td><b>β-carotene, polyphenols		</td>
+    <td>Nrf2, p53, β-catenin	</td>
+    
+	<td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/carrot.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Carrot</b></font></div>
+  </div>
+</div><br>	</td>
+<td>Plant-based</td>
+<td>Antioxidant, modulates cell cycle	</td>
+<td>May lower cancer risk via antioxidant and cell regulation	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr>
+  <tr>
+    <td><b>β-carotene, polyphenols	</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/pumpkin.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Pumpkin</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, anti-inflammatory	</td>
+ <td>May reduce oxidative stress, support immune function	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    
+    <td><b>β-carotene, anthocyanins	</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    
+	<td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/sweet potato	.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Sweet potato	</b></font></div>
+  </div>
+</div><br>	</td>
+<td>Plant-based</td>
+<td>Antioxidant, anti-inflammatory	</td>
+<td>May protect DNA, inhibit cancer cell proliferation</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr>
+  <tr>
+    <td><b>Polyphenols, fiber, lignans		</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/pearl.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Pearl millet</b></font></div>
+  </div></div><br><br> <div class="container">
+  <img src="images/foxtail.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Fox millet</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, modulates gut microbiome	</td>
+ <td>Fiber and phytochemicals may reduce bladder cancer risk	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    
+    <td><b>Omega-3 fatty acids, selenium		</td>
+    <td>PPAR, Nrf2	</td>
+    
+	<td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/seer.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Seer </b></font></div>
+  </div>
+</div><br><div class="container">
+  <img src="images/red.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Red snapper</b></font></div>
+  </div>
+</div><br>		</td>
+<td>Animal-based</td>
+<td>Anti-inflammatory, modulate immune response	</td>
+<td>May reduce inflammation, support DNA repair	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr>
+  <tr>
+    <td><b>Curcumin	</td>
+    <td>Nrf2, p53, NF-κB, MAPK	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/tumeric.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Turmeric	</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, induces apoptosis, inhibits inflammation	</td>
+ <td>May inhibit tumor growth, support detoxification	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    <td><b>Withanolides	</td>
+    <td>p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/ashwa.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Ashwagandha	</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Induces apoptosis, inhibits inflammation	</td>
+ <td>May inhibit tumor growth, support immune function	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    <td><b>β-asarone, polyphenols		</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/vach.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Vach (Acorus calamus)</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, anti-inflammatory, induces apoptosis	</td>
+ <td>May reduce oxidative stress, inhibit cancer cell growth	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    <td><b>Cyperene, polyphenols		</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/nar.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Nagarmotha (Cyperus rotundus)		</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, anti-inflammatory	</td>
+ <td>May support detoxification, reduce cancer progression</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    <td><b>Piperine, polyphenols		</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/gaj.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Gajpipal (Piper chaba)		</b></font></div>
+  </div></div><br><br> <div class="container">
+  <img src="images/pepper.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Black pepper	</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, anti-inflammatory		</td>
+ <td>May enhance bioavailability of other compounds, inhibit tumor growth</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr><tr>
+    <td><b>Berberine, polyphenols		</td>
+    <td>Nrf2, p53, NF-κB	</td>
+    <td><style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffcc99 0%, #ff99cc 100%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/daru.jpg" class="image">
+  <div class="overlay">
+    <div class="text"><font size="1.98"><b>Daur haldi root	</b></font></div>
+  </div></div><br><br> 
+ </td>
+   <td>Plant-Based</td>
+	<td>Antioxidant, induces apoptosis, inhibits inflammation		</td>
+ <td>May inhibit cancer cell proliferation, support detoxification	</td>
+<td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3558114/">(2)</a>
+ </tr>
+ </table>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
+

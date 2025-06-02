@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="previous">&laquo; Previous</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #00C0C0;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: linear-gradient(to bottom, #FFE53B 0%, #00FFFF 100%);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: -3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+	
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Diagnosis</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+     
+	      <li><a href="diagnosis.html">Cystoscopy</a></li>
+	 	  <li ><a href="biopsy.html">Biopsy</a></li>
+	 	  <li><a href="ct.html">Computed tomography (CT) urogram</a></li>
+	 	  <li class="active"><a href="stage.html">Tests to stage bladder cancer</a></li>
+		  
+	  
+	  
+    </ul>
+  </nav>
+  
+  <article>
+   <p><b>The following imaging tests may be used to determine the bladder cancer stage.</b></p>
+
+<p style ="font-family:arial;">
+
+<p><b>Computed tomography (CT) scan</b></p>
+<p>A CT scan uses a computer linked to an x-ray machine to make a series of detailed x-ray pictures of areas inside the body from different angles. A dye may be injected into a vein or swallowed to help the organs or tissues show up more clearly.
+<center><img src="ct.png" width="500px"></center>
+<p><b>Figure</b> shows that A CT scan from a patient with bladder cancer, showing disease-related thickening of the bladder wall.<a href="https://www.cancer.gov/news-events/cancer-currents-blog/2017/approvals-fda-checkpoint-bladder">Source</a>
+
+<p><b>Magnetic resonance imaging (MRI)</b></p>
+MRI uses a magnet, radio waves, and a computer to make a series of detailed pictures of areas inside the body, such as the bladder. This procedure is also called nuclear magnetic resonance imaging. Images may be taken at three different times after the dye is injected, to get the best picture of abnormal areas in the bladder. This is called triple-phase MRI.
+<center><img src="mri.png" width="500px"></center>
+<p><b>Figure</b> shows that T1 MRI showing left lateral bladder tumour seen as intermediate signal compared with low signal urine in the bladder. There is fat stranding adjacent to the tumour, in keeping with early T3b disease.<a href="https://www.urologynews.uk.com/features/features/post/bladder-carcinoma-mri">Source</a>
+
+<p><b>Chest x-ray</b></p>
+A chest x-ray is an x-ray of the organs and bones inside the chest. An x-ray is a type of high-energy radiation that can go through the body and onto film, making a picture of areas inside the chest.
+
+<p><b>Bone scan</b></p>
+A bone scan is a procedure that checks to see if there are rapidly dividing cells, such as cancer cells, in the bone. A very small amount of radioactive material is injected into a vein and travels through the bloodstream. The radioactive material collects in the bones with cancer and is detected by a scanner.<a href="https://www.cancer.gov/types/bladder/diagnosis">Source</a></article>
+</section>
+</body>
+</html>
+
