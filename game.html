@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gene Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧬 Match Genes with Cancer Types</h1>
+
+  <div class="container">
+    <div class="genes">
+      <div class="gene" draggable="true" id="TP53">TP53</div>
+        <div class="gene" draggable="true" id="APC">APC</div>
+	  <div class="gene" draggable="true" id="BRCA1">BRCA1</div>
+	   <div class="gene" draggable="true" id="TP53">TP53</div>
+	   	  <div class="gene" draggable="true" id="BRCA2">BRCA2</div>
+    </div>
+    <div class="cancers">
+      <div class="cancer" data-match="BRCA1">Breast Cancer</div>      
+	  <div class="cancer" data-match="TP53">Lung Cancer</div>
+      <div class="cancer" data-match="APC">Colorectal Cancer</div>
+      <div class="cancer" data-match="TP53">Glioblastoma</div>
+      <div class="cancer" data-match="BRCA2">Prostate Cancer</div>
+    </div>
+  </div>
+
+  <button onclick="submitScore()">Submit Score</button>
+  <script src="script.js"></script>
+</body>
+</html>
